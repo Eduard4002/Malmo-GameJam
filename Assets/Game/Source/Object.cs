@@ -32,7 +32,7 @@ public class Object : MonoBehaviour
 
     public CharacteristicDefinition GenerateCharacteristics()
     {
-        int randomIndex = Random.Range(0, 9);
+        int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];
     }
 
