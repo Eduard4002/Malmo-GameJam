@@ -609,8 +609,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../Fmod projects/WitchGameFmod/WitchGameFmod.fspro
-  sourceBankPath: ../../../Fmod projects/WitchGameFmod/Build
+  sourceProjectPath: WitchGameFmod/WitchGameFmod.fspro
+  sourceBankPath: WitchGameFmod/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
