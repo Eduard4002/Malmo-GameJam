@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
+	[SerializeField] private Color startColor;
+	[SerializeField] private Color endColor;
+	[SerializeField] private Color flashColor;
+
 	[SerializeField]
 	private float drawTime = 5;
 	private float timer = 0;
@@ -134,7 +138,7 @@ public class DrawManager : Singleton<DrawManager>
 	{
 		// go towards red until last 3rd of time
 		float t = (5f-timer) / (drawTime-drawTime/3); // sorry i got tired
-		brushMat.color = Color.Lerp(Color.green, Color.red, t);
+		brushMat.color = Color.Lerp(Color.blue, Color.red, t);
 
 		// blink on last 3rd of time
 		if (t > 1f) 
