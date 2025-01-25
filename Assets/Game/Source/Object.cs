@@ -43,11 +43,16 @@ public class Object : MonoBehaviour
         return GameManager.Characteristics[randomIndex];
     }
 
-    public void PointerClickEvent(BaseEventData pointerData){
+    public void ToggleBubble(){
         //The user has clicked on the object, either select/deselect
         itemSelected = !itemSelected;
 
         bubbbleOverlay.SetActive(itemSelected);
+
+        if(itemSelected){
+            ObjectSelection.instance.IngredientSelected(this);
+        }
+
     }
 
 }
