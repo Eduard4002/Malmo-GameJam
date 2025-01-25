@@ -36,7 +36,13 @@ public class Object : MonoBehaviour
         bubbbleOverlay.SetActive(false);
     }
 
-    public CharacteristicDefinition GenerateCharacteristics()
+	private void Start()
+	{
+        transform.name = $"{Characteristics.Shape} - {Characteristics.Texture}";
+
+    }
+
+	public CharacteristicDefinition GenerateCharacteristics()
     {
         int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];

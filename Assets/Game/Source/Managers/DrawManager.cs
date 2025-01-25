@@ -45,10 +45,7 @@ public class DrawManager : Singleton<DrawManager>
 		int positionIndex = brush.positionCount - 1;
 		brush.SetPosition(positionIndex, pointPos);
 
-		// copying points feat awful conversion bullshit
-		var points = new Vector3[brush.positionCount];
-		brush.GetPositions(points);
-		poly.points = Helpers.ConvertToVector2Array(points);
+		UpdatePolygon();
 	}
 
 	void Draw()
@@ -78,6 +75,7 @@ public class DrawManager : Singleton<DrawManager>
 		brush.SetPosition(1, mousePos);
 
 		isDrawing = true;
+		poly.points = new Vector2[5];
 	}
 
 	void EndDraw()
@@ -88,8 +86,20 @@ public class DrawManager : Singleton<DrawManager>
 
 	void Encircle()
 	{
+		UpdatePolygon();
 		print("CIRCLED AROUND SOME SHIT!");
 		EndDraw();
+
+		var overlapped = new List<Object>();
+		foreach (var obj in ObjectSpawner.instance.objectsSpawned)
+		{
+			if(poly.OverlapPoint(obj.transform.position))
+			{
+				overlapped.Add(obj);
+				print($"overlap: {obj.transform.name}");
+			}
+		}
+
 	}
 
 	private bool HasEncirled()
@@ -110,6 +120,13 @@ public class DrawManager : Singleton<DrawManager>
 				return true;
 		}
 		return false;
+	}
+
+	private void UpdatePolygon()
+	{
+		var points = new Vector3[brush.positionCount];
+		brush.GetPositions(points);
+		poly.points = Helpers.ConvertToVector2Array(points);
 	}
 
 	private void OnDrawGizmos()
