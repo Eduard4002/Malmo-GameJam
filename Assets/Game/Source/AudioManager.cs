@@ -1,10 +1,10 @@
 using UnityEngine;
 using FMODUnity;
-using System.Threading.Tasks;
 using FMOD.Studio;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 
-public class AudioSystem : Singleton<AudioSystem>
+public class AudioManager : Singleton<AudioManager>
 {
 	[field: SerializeField, Range(0f, 1f)] public float MasterVolume	{ get; set; } = 1f;
 	[field: SerializeField, Range(0f, 1f)] public float MusicVolume		{ get; set; } = 1f;
