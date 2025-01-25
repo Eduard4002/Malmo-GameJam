@@ -13,11 +13,11 @@ public class ObjectSpawner : MonoBehaviour
             Debug.Log("starting to spawn"); 
         for(int i = 0; i < maxAmount;i++){
             Debug.Log($"Filling empty slot: {i}");
-            Vector3 pos = GridSystem.instance.FindEmptySlot();
+            Vector2 pos = GridSystem.instance.FindEmptySlot();
 
            
 
-            GameObject temp = Instantiate(objectPrefab, pos, Quaternion.identity);
+            GameObject temp = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
             temp.transform.parent = cauldronObject.transform;
 
 

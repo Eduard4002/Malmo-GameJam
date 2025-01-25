@@ -5,7 +5,7 @@ using UnityEngine;
 public class GridSystem : MonoBehaviour
 {
     public Vector2[] spawnPositions;
-    public List<Vector2> slotsTaken = new List<Vector2>();
+    public List<int> slotsTaken = new List<int>();
 
     public static GridSystem instance;
 
@@ -25,22 +25,26 @@ public class GridSystem : MonoBehaviour
 
     
     public Vector2 FindEmptySlot(){
-        Vector2 position = Vector2.zero;
-        //Loop through the spawnPositions
-        //slotsTaken.Any(x => x.x != spawnPositions[randomIndex].x && x.y != spawnPositions[randomIndex].y)
-        bool slotFound = false;
-        while(!slotFound){
+        Vector2 finalPos = Vector2.zero;
+        if(slotsTaken.Count == 0) {
             int randomIndex = Random.Range(0, spawnPositions.Length);
-            Debug.Log($"Random index: {randomIndex}");
-            if(slotsTaken.Count == 0 || slotsTaken.Any(x => x.x != spawnPositions[randomIndex].x && x.y != spawnPositions[randomIndex].y)){
-                Debug.Log("Empty slot found");
-                position = spawnPositions[randomIndex];
-                slotsTaken.Add(position);
-                Debug.Log("Slotstaken count" + slotsTaken.Count);
-                slotFound = true;
+            finalPos = spawnPositions[randomIndex];
+            slotsTaken.Add(randomIndex);
+        }else{
+            bool slotFound = false;
+            while(!slotFound){
+                int randomIndex = Random.Range(0, spawnPositions.Length);
+                if(!slotsTaken.Contains(randomIndex)){
+                    finalPos = spawnPositions[randomIndex];
+                    slotsTaken.Add(randomIndex);
+                    slotFound = true;
+                    break;
+                }
+
             }
         }
-        return position;
+
+        return finalPos;
     }
     
 }
