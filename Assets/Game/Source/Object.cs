@@ -31,6 +31,7 @@ public class Object : MonoBehaviour
     public void Awake()
     {
         Characteristics = GenerateCharacteristics();
+        transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = Characteristics.Sprite;
         bubbbleOverlay = transform.GetChild(0).gameObject;
         bubbbleOverlay.SetActive(false);
     }

@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Sprite[] plainSpriteArray = Resources.LoadAll<Sprite>("Ingredients-blue-filled");
-        Sprite[] zigzagSpriteArray = Resources.LoadAll<Sprite>("Ingredients-purple-zigzag"); //currently unused
-        Sprite[] stripedSpriteArray = Resources.LoadAll<Sprite>("Ingredients-red-striped");
-        Sprite[] dotsSpriteArray = Resources.LoadAll<Sprite>("Ingredients-yellow-dots");
+        Sprite[] plainSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-blue-filled");
+        Sprite[] zigzagSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-purple-zigzag"); //currently unused
+        Sprite[] stripedSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-red-striped");
+        Sprite[] dotsSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-yellow-dots");
 
         //0 = frog
         //1 = fish
