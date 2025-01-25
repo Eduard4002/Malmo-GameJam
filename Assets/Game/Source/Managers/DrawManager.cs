@@ -2,6 +2,7 @@ using FMODUnity;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
@@ -100,11 +101,13 @@ public class DrawManager : Singleton<DrawManager>
 	void Encircle()
 	{
 		UpdatePolygon();
-		print("CIRCLED AROUND SOME SHIT!");
 		EndDraw();
 		
 		var overlapped = GetOverlappedObjects();
 		ObjectSelection.Instance.CheckSelection(overlapped);
+
+		var names = overlapped.Select(o => o.name).ToArray();
+		print("Encircled: " + string.Join(", ", names));
 	}
 
 	private bool HasEncirled()

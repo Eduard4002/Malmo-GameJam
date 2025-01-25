@@ -21,7 +21,7 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			{
 				GridSystem.Instance.RemoveSlot(ingredients[i].SpawnIndex);
 				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
-				Destroy(ingredients[i].gameObject);
+				ingredients[i].DeleteSelf();
 			}
 			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
 		}
