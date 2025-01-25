@@ -10,6 +10,19 @@ public class UIManager : MonoBehaviour
     public TMP_Text scoreText;
     private int score = 0;
 
+    public static UIManager instance;
+
+    private void Awake() {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

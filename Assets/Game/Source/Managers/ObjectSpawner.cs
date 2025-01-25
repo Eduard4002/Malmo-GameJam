@@ -43,7 +43,7 @@ public class ObjectSpawner : MonoBehaviour
         int numberToSpawn = numberOfIngredients <= slotsFree ? numberOfIngredients : slotsFree;
 
         Debug.Log($"Spawning {numberOfIngredients} new ingredients");
-        for(int i = 0; i < numberOfIngredients; i++)
+        for(int i = 0; i < numberToSpawn; i++)
         {
             Debug.Log($"Spawning ingredient {i}");
             (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();

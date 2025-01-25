@@ -61,6 +61,7 @@ public class ObjectSelection : MonoBehaviour
             int numberOfBubbles = itemsSelected.Count;
             if(succeded){
                 //Calculate the score based on the items selected
+                UIManager.instance.UpdateScore(numberOfBubbles * 5);
                 //Destroy the items only if we succeded
                 for(int i = 0; i < numberOfBubbles;i++){
                     GridSystem.instance.RemoveSlot(itemsSelected[i].SpawnIndex);
@@ -73,6 +74,8 @@ public class ObjectSelection : MonoBehaviour
                 for(int i = 0; i < itemsSelected.Count;i++){
                     itemsSelected[i].ToggleSelection();
                 }
+                UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
+
                 itemsSelected[itemsSelected.Count - 1].ToggleSelection();
             }
                 

@@ -3,9 +3,25 @@ using UnityEngine.SceneManagement;
 
 public class StartMenuManager : MonoBehaviour
 {
+
+    public Vector3 endPosition; 
+    public float speed;
+    public GameObject backgroundObject;
+
+    private bool startAnimation = false;
+    private void Update() {
+        if(!startAnimation) return;
+        backgroundObject.transform.position = Vector3.MoveTowards(backgroundObject.transform.position, endPosition, speed * Time.deltaTime );
+
+        if(backgroundObject.transform.position == endPosition){
+            //Start the game
+            SceneManager.LoadSceneAsync("ObjectSpawning");
+        }
+    }
+    
     public void StartGame()
     {
-        SceneManager.LoadSceneAsync("ObjectSpawning");
+        startAnimation = true;
     }
 
     public void QuitGame()
@@ -13,4 +29,5 @@ public class StartMenuManager : MonoBehaviour
         Debug.Log("Game is exiting");
         Application.Quit();
     }
+
 }
