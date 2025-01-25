@@ -5,26 +5,35 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static List<CharacteristicDefinition> Characteristics;
-    public Sprite Frog;
-    public Sprite Eye;
-    public Sprite Chickenfeet;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Sprite[] plainSpriteArray = Resources.LoadAll<Sprite>("Ingredients-blue-filled");
+        Sprite[] zigzagSpriteArray = Resources.LoadAll<Sprite>("Ingredients-purple-zigzag"); //currently unused
+        Sprite[] stripedSpriteArray = Resources.LoadAll<Sprite>("Ingredients-red-striped");
+        Sprite[] dotsSpriteArray = Resources.LoadAll<Sprite>("Ingredients-yellow-dots");
+
+        //0 = frog
+        //1 = fish
+        //2 = skull
+        //3 = chickenfeet
+        //4 = eyeball
+        //5 = mushroom
+
         Characteristics = new List<CharacteristicDefinition>()
         {
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Plain, Sprite = Frog },
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Spots, Sprite = Frog },
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = Frog },
+            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Plain, Sprite = plainSpriteArray[0] },
+            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Spots, Sprite = dotsSpriteArray[0] },
+            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = stripedSpriteArray[0] },
 
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Plain, Sprite = Eye },
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Spots, Sprite = Eye },
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = Eye },
+            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Plain, Sprite = plainSpriteArray[4] },
+            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Spots, Sprite = dotsSpriteArray[4] },
+            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = stripedSpriteArray[4] },
 
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Plain, Sprite = Chickenfeet },
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Spots, Sprite = Chickenfeet },
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Stripes, Sprite = Chickenfeet },
+            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Plain, Sprite = plainSpriteArray[3] },
+            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Spots, Sprite = dotsSpriteArray[3] },
+            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Stripes, Sprite = stripedSpriteArray[3] },
         };
     }
 
