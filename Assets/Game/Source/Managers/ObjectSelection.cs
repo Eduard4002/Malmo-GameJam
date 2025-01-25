@@ -66,6 +66,8 @@ public class ObjectSelection : MonoBehaviour
                     GridSystem.instance.RemoveSlot(itemsSelected[i].SpawnIndex);
                     Destroy(itemsSelected[i].gameObject);
                 }
+                ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
+
             }else{
                 for(int i = 0; i < itemsSelected.Count;i++){
                     itemsSelected[i].ToggleSelection();
@@ -76,7 +78,6 @@ public class ObjectSelection : MonoBehaviour
             // Clear the list
             itemsSelected.Clear();
 
-            ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
             lastObjectSelected = null;
         }
         else
