@@ -1,3 +1,4 @@
+using FMODUnity;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -5,6 +6,8 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
+	public EventReference sfx;
+
 	private float drawnDist = 0;
 	private bool isDrawing = false;
 	private Vector2 lastPos;
