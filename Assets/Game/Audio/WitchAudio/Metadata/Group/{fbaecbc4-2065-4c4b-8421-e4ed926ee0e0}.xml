@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{fbaecbc4-2065-4c4b-8421-e4ed926ee0e0}">
+		<property name="name">
+			<value>Bubbles</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{0e6fe37e-e45d-421f-82fa-c61d368096bc}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{b6b6fb82-7c27-414b-aed6-69efd1c5e03d}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e369d249-265e-4f83-aba2-1dc129ed0656}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{0e6fe37e-e45d-421f-82fa-c61d368096bc}">
+		<relationship name="effects">
+			<destination>{25c29533-ff7f-42bc-aebf-cd5634cb9194}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{b6b6fb82-7c27-414b-aed6-69efd1c5e03d}" />
+	<object class="MixerBusFader" id="{25c29533-ff7f-42bc-aebf-cd5634cb9194}" />
+</objects>
