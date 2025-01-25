@@ -55,16 +55,42 @@ public class ObjectSelection : MonoBehaviour
             timerStarted = false;
             timeLeft = timerAmount;
 
-            //Calculate the score based on the items selected
+            //See if the user has the correct selection
+            bool succeded = CheckSuccession(itemsSelected);
+            Debug.Log("Correct selection: " + succeded);
+            if(succeded){
+                //Calculate the score based on the items selected
 
-            //Destroy the items
-            for(int i = 0; i < itemsSelected.Count;i++){
-                Destroy(itemsSelected[i].gameObject);
+                //Destroy the items only if we succeded
+                for(int i = 0; i < itemsSelected.Count;i++){
+                    Destroy(itemsSelected[i].gameObject);
+                }
+            }else{
+                for(int i = 0; i < itemsSelected.Count;i++){
+                    itemsSelected[i].ToggleSelection();
+                }
+                itemsSelected[itemsSelected.Count - 1].ToggleSelection();
             }
-            // Clear the list after destroying items
+            // Clear the list
             itemsSelected.Clear();
         }
         lastObjectSelected = ingredient;
+    }
+    private bool CheckSuccession(List<Object> items){
+        if(items == null || items.Count == 0) return false;
+        bool success = true;
+        Object check = itemsSelected[0];
+        //Check if the user has picked the correct or wrong ingredients
+        for(int i = 0; i < itemsSelected.Count;i++){
+            if(itemsSelected[i].Characteristics.Shape == check.Characteristics.Shape ||itemsSelected[i].Characteristics.Texture == check.Characteristics.Texture){
+                continue;
+            }else{
+                success = false;
+                break;
+            }
+        }
+        return success;
+
     }
 
 

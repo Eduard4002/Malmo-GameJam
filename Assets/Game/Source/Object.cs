@@ -41,14 +41,15 @@ public class Object : MonoBehaviour
         int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];
     }
-
-
-    public void ToggleBubble(){
-        //The user has clicked on the object, either select/deselect
+    public void ToggleSelection(){
         itemSelected = !itemSelected;
 
         bubbbleOverlay.SetActive(itemSelected);
+    }
 
+
+    public void ToggleBubble(){
+        ToggleSelection();
         if(itemSelected){
             ObjectSelection.instance.IngredientSelected(this);
         }
