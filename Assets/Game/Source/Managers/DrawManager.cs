@@ -6,13 +6,19 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
-	public EventReference sfx;
+	[SerializeField] private Color startColor;
+	[SerializeField] private Color endColor;
+	[SerializeField] private Color flashColor;
 
-	private float drawnDist = 0;
+	[SerializeField]
+	private float drawTime = 5;
+	private float timer = 0;
+
 	private bool isDrawing = false;
 	private Vector2 lastPos;
 	private Vector2 startPos;
 	
+	private Material brushMat;
 	private LineRenderer brush;
 	private PolygonCollider2D poly;
 
@@ -21,6 +27,7 @@ public class DrawManager : Singleton<DrawManager>
 		base.Awake();
 		brush = GetComponentInChildren<LineRenderer>();
 		poly = GetComponentInChildren<PolygonCollider2D>();
+		brushMat = brush.material;
 	}
 
 	private void Update()
@@ -31,13 +38,15 @@ public class DrawManager : Singleton<DrawManager>
 		if (!isDrawing)
 			return;
 
-		if (Input.GetMouseButton(0))
+		timer -= Time.deltaTime;
+		UpdateVisual();
+
+		if (Input.GetMouseButton(0) && timer > 0)
 		{
 			Draw();
 		}
-		else if (Input.GetMouseButtonUp(0))
+		else if (Input.GetMouseButtonUp(0) || timer <= 0)
 		{
-			print("finish");
 			EndDraw();
 		}
 	}
@@ -48,10 +57,7 @@ public class DrawManager : Singleton<DrawManager>
 		int positionIndex = brush.positionCount - 1;
 		brush.SetPosition(positionIndex, pointPos);
 
-		// copying points feat awful conversion bullshit
-		var points = new Vector3[brush.positionCount];
-		brush.GetPositions(points);
-		poly.points = Helpers.ConvertToVector2Array(points);
+		UpdatePolygon();
 	}
 
 	void Draw()
@@ -61,7 +67,6 @@ public class DrawManager : Singleton<DrawManager>
 
 		if (dist > .1f)
 		{
-			drawnDist += dist;
 			AddPoint(mousePos);
 			lastPos = mousePos;
 		}
@@ -81,8 +86,9 @@ public class DrawManager : Singleton<DrawManager>
 		brush.SetPosition(0, mousePos);
 		brush.SetPosition(1, mousePos);
 
-		drawnDist = 0;
 		isDrawing = true;
+		timer = drawTime;
+		poly.points = new Vector2[5];
 	}
 
 	void EndDraw()
@@ -93,8 +99,12 @@ public class DrawManager : Singleton<DrawManager>
 
 	void Encircle()
 	{
+		UpdatePolygon();
 		print("CIRCLED AROUND SOME SHIT!");
 		EndDraw();
+		
+		var overlapped = GetOverlappedObjects();
+		ObjectSelection.Instance.CheckSelection(overlapped);
 	}
 
 	private bool HasEncirled()
@@ -115,6 +125,40 @@ public class DrawManager : Singleton<DrawManager>
 				return true;
 		}
 		return false;
+	}
+
+	private void UpdatePolygon()
+	{
+		var points = new Vector3[brush.positionCount];
+		brush.GetPositions(points);
+		poly.points = Helpers.ConvertToVector2Array(points);
+	}
+
+	private void UpdateVisual()
+	{
+		// go towards red until last 3rd of time
+		float t = (5f-timer) / (drawTime-drawTime/3); // sorry i got tired
+		brushMat.color = Color.Lerp(Color.blue, Color.red, t);
+
+		// blink on last 3rd of time
+		if (t > 1f) 
+		{
+			// blink
+			brushMat.color = Color.Lerp(Color.red, Color.white, t*t*t*3 % 1f); //it works, so shut up
+		}
+	}
+
+	private List<Object> GetOverlappedObjects()
+	{
+		var overlapped = new List<Object>();
+		foreach (var obj in ObjectSpawner.instance.objectsSpawned)
+		{
+			if (poly.OverlapPoint(obj.transform.position))
+			{
+				overlapped.Add(obj);
+			}
+		}
+		return overlapped;
 	}
 
 	private void OnDrawGizmos()

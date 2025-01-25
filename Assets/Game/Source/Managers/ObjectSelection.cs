@@ -1,110 +1,52 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
-public class ObjectSelection : MonoBehaviour
+public class ObjectSelection : Singleton<ObjectSelection>
 {
-    public static ObjectSelection instance;
-    public List<Object> itemsSelected;
-    public Object lastObjectSelected;
+	[SerializeField, Tooltip("How long can the user select (seconds)")] float timerAmount = 10f;
+	private bool timerStarted;
+	private float timeLeft;
 
-    [SerializeField, Tooltip("How long can the user select (seconds)")] float timerAmount = 10f;
-    private bool timerStarted;
-    private float timeLeft;
+	public void CheckSelection(List<Object> ingredients)
+	{
+		bool succeded = CheckSuccession(ingredients);
+		Debug.Log("Correct selection: " + succeded);
+		int numberOfBubbles = ingredients.Count;
 
-    private void Awake() {
-        if(instance == null){
-            instance = this;
-        }else{
-            Destroy(this);
-        }
-    }
-    private void Update() {
-        if(timerStarted){
-            timeLeft -= Time.deltaTime;
-            if(timeLeft <= 0){
-                timerStarted = false;
-                //destroy the bubbles
-                DestroyBubbles();
-            }
-        } 
-        
-    }
-    private void DestroyBubbles(){
-        for (int i = 0; i < itemsSelected.Count; i++){
-            itemsSelected[i].ToggleBubble();
-        }
-        itemsSelected.Clear();
-        lastObjectSelected = null;
-    }
+		if (succeded)
+		{
+			//Calculate the score based on the items selected
+			//Destroy the items only if we succeded
+			for (int i = 0; i < numberOfBubbles; i++)
+			{
+				GridSystem.Instance.RemoveSlot(ingredients[i].SpawnIndex);
+				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
+				Destroy(ingredients[i].gameObject);
+			}
+			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
+		}
+	}
 
-    public void IngredientSelected(Object selection){
-        if(itemsSelected.Contains(selection)) return;
-        if(itemsSelected.Count == 0){
-            //Start a new timer 
-            timerStarted = true;
-            timeLeft = timerAmount;
-        }
-        itemsSelected.Add(selection);
+	private bool CheckSuccession(List<Object> items)
+	{
+		if (items == null || items.Count == 0)
+			return false;
 
-    }
-    public void IngredientClicked(Object ingredient){
-        if(itemsSelected.Count == 1) return;
-         //User has double clicked on the same item, selection has finished
-        if(lastObjectSelected == ingredient){
-            timerStarted = false;
-            timeLeft = timerAmount;
+		// Require atleast 2 objects
+		if (items.Count < 2)
+			return false;
 
-            //See if the user has the correct selection
-            bool succeded = CheckSuccession(itemsSelected);
-            Debug.Log("Correct selection: " + succeded);
-            int numberOfBubbles = itemsSelected.Count;
-            if(succeded){
-                //Calculate the score based on the items selected
-                UIManager.instance.UpdateScore(numberOfBubbles * 5);
-                //Destroy the items only if we succeded
-                for(int i = 0; i < numberOfBubbles;i++){
-                    GridSystem.instance.RemoveSlot(itemsSelected[i].SpawnIndex);
-                    ObjectSpawner.instance.RemoveObjectSpawned(itemsSelected[i].SpawnIndex);
-                    Destroy(itemsSelected[i].gameObject);
-                }
-                ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
+		//Check if the user has picked the correct or wrong ingredients
+		Object check = items[0];
+		for (int i = 0; i < items.Count; i++)
+		{
+			var item = items[i];
+			var sameShape = item.Characteristics.Shape == check.Characteristics.Shape;
+			var sameTexture = item.Characteristics.Texture == check.Characteristics.Texture;
 
-            }else{
-                for(int i = 0; i < itemsSelected.Count;i++){
-                    itemsSelected[i].ToggleSelection();
-                }
-                UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
-
-                itemsSelected[itemsSelected.Count - 1].ToggleSelection();
-            }
-                
-            // Clear the list
-            itemsSelected.Clear();
-
-            lastObjectSelected = null;
-        }
-        else
-        {
-            lastObjectSelected = ingredient;
-        }
-    }
-    private bool CheckSuccession(List<Object> items){
-        if(items == null || items.Count == 0) return false;
-        bool success = true;
-        Object check = itemsSelected[0];
-        //Check if the user has picked the correct or wrong ingredients
-        for(int i = 0; i < itemsSelected.Count;i++){
-            if(itemsSelected[i].Characteristics.Shape == check.Characteristics.Shape ||itemsSelected[i].Characteristics.Texture == check.Characteristics.Texture){
-                continue;
-            }else{
-                success = false;
-                break;
-            }
-        }
-        return success;
-
-    }
-
-
+			if (!sameShape && !sameTexture)
+				return false;
+		}
+		return true;
+	}
 }

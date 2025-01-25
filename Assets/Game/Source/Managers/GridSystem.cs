@@ -2,20 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 [ExecuteInEditMode]
-public class GridSystem : MonoBehaviour
+public class GridSystem : Singleton<GridSystem>
 {
     public Vector2[] spawnPositions;
     public List<int> slotsTaken = new List<int>();
 
-    public static GridSystem instance;
-
-    void Awake(){
-        if(instance == null){
-            instance = this;
-        }else{
-            Destroy(this);
-        }
-    }
     private void OnValidate() {
         spawnPositions = new Vector2[transform.childCount];
         for(int i = 0; i < transform.childCount; i++){
@@ -23,7 +14,6 @@ public class GridSystem : MonoBehaviour
         }
     }
 
-    
     public (int, Vector2) FindEmptySlot(){
         Vector2 finalPos = Vector2.zero;
         int randomIndex = -1;

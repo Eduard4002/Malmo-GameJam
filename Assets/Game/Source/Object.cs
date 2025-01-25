@@ -24,38 +24,32 @@ public class Object : MonoBehaviour
 {
     public CharacteristicDefinition Characteristics;
     public int SpawnIndex;
-    private bool itemSelected;
+	public SpriteRenderer sr;
     private GameObject bubbbleOverlay;
-
 
     public void Awake()
     {
         Characteristics = GenerateCharacteristics();
-        transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = Characteristics.Sprite;
         bubbbleOverlay = transform.GetChild(0).gameObject;
         bubbbleOverlay.SetActive(false);
+        sr = GetComponentInChildren<SpriteRenderer>();
+		sr.sprite = Characteristics.Sprite;
+        sr.color = Color.clear;
     }
 
-    public CharacteristicDefinition GenerateCharacteristics()
+	private void Start()
+	{
+        transform.name = $"{Characteristics.Shape} - {Characteristics.Texture}";
+    }
+
+	private void Update()
+	{
+        sr.color = Color.Lerp(sr.color, Color.white, Time.deltaTime * 2);
+	}
+
+	public CharacteristicDefinition GenerateCharacteristics()
     {
         int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];
     }
-    public void ToggleSelection(){
-        itemSelected = !itemSelected;
-
-        bubbbleOverlay.SetActive(itemSelected);
-    }
-
-
-    public void ToggleBubble(){
-        ToggleSelection();
-        if(itemSelected){
-            ObjectSelection.instance.IngredientSelected(this);
-        }
-
-        ObjectSelection.instance.IngredientClicked(this);
-
-    }
-
 }
