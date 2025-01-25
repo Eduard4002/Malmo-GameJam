@@ -24,21 +24,28 @@ public class Object : MonoBehaviour
 {
     public CharacteristicDefinition Characteristics;
     public int SpawnIndex;
+	public SpriteRenderer sr;
     private GameObject bubbbleOverlay;
-
 
     public void Awake()
     {
         Characteristics = GenerateCharacteristics();
-        transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = Characteristics.Sprite;
         bubbbleOverlay = transform.GetChild(0).gameObject;
         bubbbleOverlay.SetActive(false);
+        sr = GetComponentInChildren<SpriteRenderer>();
+		sr.sprite = Characteristics.Sprite;
+        sr.color = Color.clear;
     }
 
 	private void Start()
 	{
         transform.name = $"{Characteristics.Shape} - {Characteristics.Texture}";
     }
+
+	private void Update()
+	{
+        sr.color = Color.Lerp(sr.color, Color.white, Time.deltaTime * 2);
+	}
 
 	public CharacteristicDefinition GenerateCharacteristics()
     {
