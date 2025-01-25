@@ -39,6 +39,7 @@ public class ObjectSelection : MonoBehaviour
     }
 
     public void IngredientSelected(Object selection){
+        if(itemsSelected.Contains(selection)) return;
         if(itemsSelected.Count == 0){
             //Start a new timer 
             timerStarted = true;
@@ -48,6 +49,7 @@ public class ObjectSelection : MonoBehaviour
 
     }
     public void IngredientClicked(Object ingredient){
+        if(itemsSelected.Count == 1) return;
          //User has double clicked on the same item, selection has finished
         if(lastObjectSelected == ingredient){
             timerStarted = false;
