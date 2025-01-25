@@ -943,6 +943,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 6278939877777030372, guid: 1426244268444c84b920f35b502fb90b, type: 3}
   cauldronObject: {fileID: 352493383}
   maxAmount: 9
+  objectsSpawned: []
 --- !u!4 &851576935
 Transform:
   m_ObjectHideFlags: 0
