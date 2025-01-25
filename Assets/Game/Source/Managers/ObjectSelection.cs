@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class ObjectSelection : Singleton<ObjectSelection>
@@ -20,7 +19,7 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			//Destroy the items only if we succeded
 			for (int i = 0; i < numberOfBubbles; i++)
 			{
-				GridSystem.instance.RemoveSlot(ingredients[i].SpawnIndex);
+				GridSystem.Instance.RemoveSlot(ingredients[i].SpawnIndex);
 				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
 				Destroy(ingredients[i].gameObject);
 			}
@@ -33,9 +32,12 @@ public class ObjectSelection : Singleton<ObjectSelection>
 		if (items == null || items.Count == 0)
 			return false;
 
-		Object check = items[0];
+		// Require atleast 2 objects
+		if (items.Count < 2)
+			return false;
 
 		//Check if the user has picked the correct or wrong ingredients
+		Object check = items[0];
 		for (int i = 0; i < items.Count; i++)
 		{
 			var item = items[i];

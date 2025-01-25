@@ -30,23 +30,16 @@ public class ObjectSpawner : MonoBehaviour
         SpawnNewIngredients(maxAmount);
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SpawnNewIngredients(int numberOfIngredients)
     {
-        int slotsFree = maxAmount - GridSystem.instance.NumberOfSlotsTaken();
+        int slotsFree = maxAmount - GridSystem.Instance.NumberOfSlotsTaken();
         int numberToSpawn = numberOfIngredients <= slotsFree ? numberOfIngredients : slotsFree;
 
         Debug.Log($"Spawning {numberOfIngredients} new ingredients");
         for(int i = 0; i < numberOfIngredients; i++)
         {
             Debug.Log($"Spawning ingredient {i}");
-            (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
+            (int index, Vector2 pos) = GridSystem.Instance.FindEmptySlot();
 
             GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
             ingredient.GetComponent<Object>().SpawnIndex = index;
@@ -58,7 +51,7 @@ public class ObjectSpawner : MonoBehaviour
             Debug.Log("No valid moves, spawning new ingredients");
             //Delete everything and start from beginning
             for(int i = 0; i < objectsSpawned.Count;i++){
-                GridSystem.instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
+                GridSystem.Instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
                 Destroy(objectsSpawned[i].gameObject);
                 objectsSpawned.Clear();
             }
