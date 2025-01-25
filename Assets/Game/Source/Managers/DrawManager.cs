@@ -6,10 +6,15 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
+	[SerializeField]
+	private float drawTime = 5;
+	private float timer = 0;
+
 	private bool isDrawing = false;
 	private Vector2 lastPos;
 	private Vector2 startPos;
 	
+	private Material brushMat;
 	private LineRenderer brush;
 	private PolygonCollider2D poly;
 
@@ -18,6 +23,7 @@ public class DrawManager : Singleton<DrawManager>
 		base.Awake();
 		brush = GetComponentInChildren<LineRenderer>();
 		poly = GetComponentInChildren<PolygonCollider2D>();
+		brushMat = brush.material;
 	}
 
 	private void Update()
@@ -28,13 +34,15 @@ public class DrawManager : Singleton<DrawManager>
 		if (!isDrawing)
 			return;
 
-		if (Input.GetMouseButton(0))
+		timer -= Time.deltaTime;
+		UpdateVisual();
+
+		if (Input.GetMouseButton(0) && timer > 0)
 		{
 			Draw();
 		}
-		else if (Input.GetMouseButtonUp(0))
+		else if (Input.GetMouseButtonUp(0) || timer <= 0)
 		{
-			print("finish");
 			EndDraw();
 		}
 	}
@@ -75,6 +83,7 @@ public class DrawManager : Singleton<DrawManager>
 		brush.SetPosition(1, mousePos);
 
 		isDrawing = true;
+		timer = drawTime;
 		poly.points = new Vector2[5];
 	}
 
@@ -119,6 +128,20 @@ public class DrawManager : Singleton<DrawManager>
 		var points = new Vector3[brush.positionCount];
 		brush.GetPositions(points);
 		poly.points = Helpers.ConvertToVector2Array(points);
+	}
+
+	private void UpdateVisual()
+	{
+		// go towards red until last 3rd of time
+		float t = (5f-timer) / (drawTime-drawTime/3); // sorry i got tired
+		brushMat.color = Color.Lerp(Color.green, Color.red, t);
+
+		// blink on last 3rd of time
+		if (t > 1f) 
+		{
+			// blink
+			brushMat.color = Color.Lerp(Color.red, Color.white, t*t*t*3 % 1f); //it works, so shut up
+		}
 	}
 
 	private List<Object> GetOverlappedObjects()
