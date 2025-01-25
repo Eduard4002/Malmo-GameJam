@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ingredients-yellow-dots_0: -404690921636779284
+      ingredients-yellow-dots_1: 5898197994298434668
+      ingredients-yellow-dots_2: 5713158014421554182
+      ingredients-yellow-dots_3: -4347340156022491835
+      ingredients-yellow-dots_4: -2964412852754621708
+      ingredients-yellow-dots_5: 6277457366872691581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

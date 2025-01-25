@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ingredients-red-striped_0: 8260209932108187291
+      ingredients-red-striped_1: -1380606467212757272
+      ingredients-red-striped_2: -4147515689569596422
+      ingredients-red-striped_3: -1333974747701922587
+      ingredients-red-striped_4: 5940014941389010185
+      ingredients-red-striped_5: 3163761570737800958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

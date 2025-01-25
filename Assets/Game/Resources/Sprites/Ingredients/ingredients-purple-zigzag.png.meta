@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ingredients-purple-zigzag_0: 3419152742464257229
+      ingredients-purple-zigzag_1: 300267052261994590
+      ingredients-purple-zigzag_2: 7616492576518750191
+      ingredients-purple-zigzag_3: -1170245112734533030
+      ingredients-purple-zigzag_4: 6863080338611499381
+      ingredients-purple-zigzag_5: 118677024160070534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

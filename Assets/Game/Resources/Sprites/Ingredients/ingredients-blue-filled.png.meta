@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ingredients-blue-filled_0: 2191535739582846678
+      ingredients-blue-filled_1: -4061947117287421067
+      ingredients-blue-filled_2: 5307205166740942407
+      ingredients-blue-filled_3: -7938982510737334720
+      ingredients-blue-filled_4: -9123444475455107110
+      ingredients-blue-filled_5: 3133953773870683665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
