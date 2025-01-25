@@ -5,6 +5,12 @@ public class DrawManager : Singleton<DrawManager>
 	private LineRenderer brush;
 	private Vector2 lastPos;
 
+	protected override void Awake()
+	{
+		base.Awake();
+		brush = GetComponentInChildren<LineRenderer>();
+	}
+
 	private void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
@@ -23,9 +29,9 @@ public class DrawManager : Singleton<DrawManager>
 
 	void AddPoint(Vector2 pointPos)
 	{
-		curLineRenderer.positionCount++;
-		int positionIndex = curLineRenderer.positionCount - 1;
-		curLineRenderer.SetPosition(positionIndex, pointPos);
+		brush.positionCount++;
+		int positionIndex = brush.positionCount - 1;
+		brush.SetPosition(positionIndex, pointPos);
 	}
 
 	void Draw()
