@@ -6,12 +6,14 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private GameObject cauldronObject;
 
 
-    public int maxAmount;
+    public int maxAmount = 9;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+            Debug.Log("starting to spawn"); 
         for(int i = 0; i < maxAmount;i++){
-            Vector3 pos = RandomPointInCircle(cauldronObject.transform.position, cauldronObject.transform.localScale.x / 4f);
+            Debug.Log($"Filling empty slot: {i}");
+            Vector3 pos = GridSystem.instance.FindEmptySlot();
 
            
 
@@ -21,14 +23,7 @@ public class ObjectSpawner : MonoBehaviour
 
         }
     }
-    Vector3 RandomPointInCircle (Vector3 center, float radius){
-		float ang = Random.value * 360;
-		Vector3 pos;
-		pos.x = center.x + radius * Mathf.Sin(ang * Mathf.Deg2Rad);
-		pos.y = center.y + radius * Mathf.Cos(ang * Mathf.Deg2Rad);
-		pos.z = center.z;
-		return pos;
-	}
+
 
     // Update is called once per frame
     void Update()
