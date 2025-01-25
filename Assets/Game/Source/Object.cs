@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public enum Shape
 {
@@ -25,15 +26,28 @@ public class Object : MonoBehaviour
 {
     public CharacteristicDefinition Characteristics;
 
+    private bool itemSelected;
+    private GameObject bubbbleOverlay;
+
+
     public void Awake()
     {
         Characteristics = GenerateCharacteristics();
+        bubbbleOverlay = transform.GetChild(0).gameObject;
+        bubbbleOverlay.SetActive(false);
     }
 
     public CharacteristicDefinition GenerateCharacteristics()
     {
         int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];
+    }
+
+    public void PointerClickEvent(BaseEventData pointerData){
+        //The user has clicked on the object, either select/deselect
+        itemSelected = !itemSelected;
+
+        bubbbleOverlay.SetActive(itemSelected);
     }
 
 }
