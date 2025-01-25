@@ -433,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15432e87940f4db4a8b91b79aa2d2f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CursorImage: {fileID: 2800000, guid: 4b0cef8e54c6b774ca2a20ecfbc0bbd0, type: 3}
 --- !u!1 &330407607
 GameObject:
   m_ObjectHideFlags: 0

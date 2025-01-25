@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static List<CharacteristicDefinition> Characteristics;
+    public Texture2D CursorImage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +37,13 @@ public class GameManager : MonoBehaviour
             new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Spots, Sprite = dotsSpriteArray[3] },
             new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Stripes, Sprite = stripedSpriteArray[3] },
         };
+
+        SetMyCursor(CursorImage);
+    }
+
+    private void SetMyCursor(Texture2D cursorTexture)
+    {
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     // Update is called once per frame
