@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
-	public EventReference sfx;
-
-	private float drawnDist = 0;
 	private bool isDrawing = false;
 	private Vector2 lastPos;
 	private Vector2 startPos;
@@ -61,7 +58,6 @@ public class DrawManager : Singleton<DrawManager>
 
 		if (dist > .1f)
 		{
-			drawnDist += dist;
 			AddPoint(mousePos);
 			lastPos = mousePos;
 		}
@@ -81,7 +77,6 @@ public class DrawManager : Singleton<DrawManager>
 		brush.SetPosition(0, mousePos);
 		brush.SetPosition(1, mousePos);
 
-		drawnDist = 0;
 		isDrawing = true;
 	}
 
