@@ -1020,8 +1020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf735a52b24d47846b546daa4bf8a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsSelected: []
-  lastObjectSelected: {fileID: 0}
   timerAmount: 5
 --- !u!1 &889663688
 GameObject:
@@ -1214,6 +1212,14 @@ PrefabInstance:
     - target: {fileID: 378541373870851361, guid: 8001392effa9ab04997122c4fca6544f, type: 3}
       propertyPath: m_Name
       value: Brush
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805001241443197301, guid: 8001392effa9ab04997122c4fca6544f, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805001241443197301, guid: 8001392effa9ab04997122c4fca6544f, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.28028107
       objectReference: {fileID: 0}
     - target: {fileID: 9153665555786691094, guid: 8001392effa9ab04997122c4fca6544f, type: 3}
       propertyPath: m_LocalPosition.x

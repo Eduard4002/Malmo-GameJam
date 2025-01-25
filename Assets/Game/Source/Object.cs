@@ -24,7 +24,6 @@ public class Object : MonoBehaviour
 {
     public CharacteristicDefinition Characteristics;
     public int SpawnIndex;
-    private bool itemSelected;
     private GameObject bubbbleOverlay;
 
 
@@ -39,7 +38,6 @@ public class Object : MonoBehaviour
 	private void Start()
 	{
         transform.name = $"{Characteristics.Shape} - {Characteristics.Texture}";
-
     }
 
 	public CharacteristicDefinition GenerateCharacteristics()
@@ -47,21 +45,4 @@ public class Object : MonoBehaviour
         int randomIndex = Random.Range(0, GameManager.Characteristics.Count);
         return GameManager.Characteristics[randomIndex];
     }
-    public void ToggleSelection(){
-        itemSelected = !itemSelected;
-
-        bubbbleOverlay.SetActive(itemSelected);
-    }
-
-
-    public void ToggleBubble(){
-        ToggleSelection();
-        if(itemSelected){
-            ObjectSelection.instance.IngredientSelected(this);
-        }
-
-        ObjectSelection.instance.IngredientClicked(this);
-
-    }
-
 }

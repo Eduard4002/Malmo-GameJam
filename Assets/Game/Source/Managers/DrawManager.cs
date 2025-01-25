@@ -89,17 +89,9 @@ public class DrawManager : Singleton<DrawManager>
 		UpdatePolygon();
 		print("CIRCLED AROUND SOME SHIT!");
 		EndDraw();
-
-		var overlapped = new List<Object>();
-		foreach (var obj in ObjectSpawner.instance.objectsSpawned)
-		{
-			if(poly.OverlapPoint(obj.transform.position))
-			{
-				overlapped.Add(obj);
-				print($"overlap: {obj.transform.name}");
-			}
-		}
-
+		
+		var overlapped = GetOverlappedObjects();
+		ObjectSelection.Instance.CheckSelection(overlapped);
 	}
 
 	private bool HasEncirled()
@@ -127,6 +119,19 @@ public class DrawManager : Singleton<DrawManager>
 		var points = new Vector3[brush.positionCount];
 		brush.GetPositions(points);
 		poly.points = Helpers.ConvertToVector2Array(points);
+	}
+
+	private List<Object> GetOverlappedObjects()
+	{
+		var overlapped = new List<Object>();
+		foreach (var obj in ObjectSpawner.instance.objectsSpawned)
+		{
+			if (poly.OverlapPoint(obj.transform.position))
+			{
+				overlapped.Add(obj);
+			}
+		}
+		return overlapped;
 	}
 
 	private void OnDrawGizmos()
