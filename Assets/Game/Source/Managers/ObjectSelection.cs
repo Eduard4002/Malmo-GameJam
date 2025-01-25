@@ -64,6 +64,7 @@ public class ObjectSelection : MonoBehaviour
                 //Destroy the items only if we succeded
                 for(int i = 0; i < numberOfBubbles;i++){
                     GridSystem.instance.RemoveSlot(itemsSelected[i].SpawnIndex);
+                    ObjectSpawner.instance.RemoveObjectSpawned(itemsSelected[i].SpawnIndex);
                     Destroy(itemsSelected[i].gameObject);
                 }
                 ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);

@@ -433,9 +433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15432e87940f4db4a8b91b79aa2d2f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frog: {fileID: 0}
-  Eye: {fileID: 0}
-  Chickenfeet: {fileID: 0}
 --- !u!1 &330407607
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +942,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 6278939877777030372, guid: 1426244268444c84b920f35b502fb90b, type: 3}
   cauldronObject: {fileID: 352493383}
   maxAmount: 9
+  objectsSpawned: []
 --- !u!4 &851576935
 Transform:
   m_ObjectHideFlags: 0
@@ -974,6 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsSelected: []
+  lastObjectSelected: {fileID: 0}
   timerAmount: 5
 --- !u!1 &889663688
 GameObject:
