@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-
 public enum Shape
 {
     Frog,
@@ -43,6 +41,7 @@ public class Object : MonoBehaviour
         return GameManager.Characteristics[randomIndex];
     }
 
+
     public void ToggleBubble(){
         //The user has clicked on the object, either select/deselect
         itemSelected = !itemSelected;
@@ -52,6 +51,8 @@ public class Object : MonoBehaviour
         if(itemSelected){
             ObjectSelection.instance.IngredientSelected(this);
         }
+
+        ObjectSelection.instance.IngredientClicked(this);
 
     }
 
