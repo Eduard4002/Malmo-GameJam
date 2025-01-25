@@ -2,42 +2,23 @@ using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
-	public Camera cam;
-	public GameObject brush;
-
-	private LineRenderer curLineRenderer;
+	private LineRenderer brush;
 	private Vector2 lastPos;
 
 	private void Update()
 	{
-		Drawing();
-	}
-
-	void Drawing()
-	{
-		if (Input.GetKeyDown(KeyCode.Mouse0))
+		if (Input.GetMouseButtonDown(0))
 		{
-			CreateBrush();
+			StartDraw();
 		}
-		else if (Input.GetKey(KeyCode.Mouse0))
+		else if (Input.GetMouseButtonDown(0))
 		{
-			PointToMousePos();
+			Draw();
 		}
-		else
+		else // finish
 		{
-			curLineRenderer = null;
+			EndDraw();
 		}
-	}
-
-	void CreateBrush()
-	{
-		GameObject brushInstance = Instantiate(brush);
-		curLineRenderer = brushInstance.GetComponent<LineRenderer>();
-
-		Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-		curLineRenderer.SetPosition(0, mousePos);
-		curLineRenderer.SetPosition(1, mousePos);
 	}
 
 	void AddPoint(Vector2 pointPos)
@@ -47,13 +28,26 @@ public class DrawManager : Singleton<DrawManager>
 		curLineRenderer.SetPosition(positionIndex, pointPos);
 	}
 
-	void PointToMousePos()
+	void Draw()
 	{
-		Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		if (lastPos != mousePos)
 		{
 			AddPoint(mousePos);
 			lastPos = mousePos;
 		}
+	}
+
+	void StartDraw()
+	{
+		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+		brush.SetPosition(0, mousePos);
+		brush.SetPosition(1, mousePos);
+	}
+
+	void EndDraw()
+	{
+		brush.positionCount = 0;
 	}
 }
