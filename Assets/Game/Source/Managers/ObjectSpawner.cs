@@ -6,22 +6,24 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private GameObject cauldronObject;
 
 
+    public static ObjectSpawner instance;
+
+
     public int maxAmount = 9;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-            Debug.Log("starting to spawn"); 
-        for(int i = 0; i < maxAmount;i++){
-            Debug.Log($"Filling empty slot: {i}");
-            Vector2 pos = GridSystem.instance.FindEmptySlot();
-
-           
-
-            GameObject temp = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
-            temp.transform.parent = cauldronObject.transform;
-
-
+        if (instance == null)
+        {
+            instance = this;
         }
+        else
+        {
+            Destroy(this);
+        }
+
+        Debug.Log($"Spawning initial ingredients");
+        SpawnNewIngredients(maxAmount);
     }
 
 
@@ -29,6 +31,23 @@ public class ObjectSpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SpawnNewIngredients(int numberOfIngredients)
+    {
+        int slotsFree = maxAmount - GridSystem.instance.NumberOfSlotsTaken();
+        int numberToSpawn = numberOfIngredients <= slotsFree ? numberOfIngredients : slotsFree;
+
+        Debug.Log($"Spawning {numberOfIngredients} new ingredients");
+        for(int i = 0; i < numberOfIngredients; i++)
+        {
+            Debug.Log($"Spawning ingredient {i}");
+            (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
+
+            GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
+            ingredient.GetComponent<Object>().SpawnIndex = index;
+            ingredient.transform.parent = cauldronObject.transform;
+        }
     }
 
 }

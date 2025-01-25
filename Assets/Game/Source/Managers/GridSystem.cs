@@ -24,16 +24,17 @@ public class GridSystem : MonoBehaviour
     }
 
     
-    public Vector2 FindEmptySlot(){
+    public (int, Vector2) FindEmptySlot(){
         Vector2 finalPos = Vector2.zero;
-        if(slotsTaken.Count == 0) {
-            int randomIndex = Random.Range(0, spawnPositions.Length);
+        int randomIndex = -1;
+        if (slotsTaken.Count == 0) {
+            randomIndex = Random.Range(0, spawnPositions.Length);
             finalPos = spawnPositions[randomIndex];
             slotsTaken.Add(randomIndex);
         }else{
             bool slotFound = false;
             while(!slotFound){
-                int randomIndex = Random.Range(0, spawnPositions.Length);
+                randomIndex = Random.Range(0, spawnPositions.Length);
                 if(!slotsTaken.Contains(randomIndex)){
                     finalPos = spawnPositions[randomIndex];
                     slotsTaken.Add(randomIndex);
@@ -44,7 +45,17 @@ public class GridSystem : MonoBehaviour
             }
         }
 
-        return finalPos;
+        return (randomIndex, finalPos);
+    }
+
+    public void RemoveSlot(int index)
+    {
+        slotsTaken.Remove(index);
+    }
+
+    public int NumberOfSlotsTaken()
+    {
+        return slotsTaken.Count;
     }
     
 }

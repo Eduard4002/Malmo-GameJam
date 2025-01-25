@@ -31,7 +31,7 @@ public class ObjectSelection : MonoBehaviour
         
     }
     private void DestroyBubbles(){
-        for(int i = 0; i < itemsSelected.Count;i++){
+        for (int i = 0; i < itemsSelected.Count; i++){
             itemsSelected[i].ToggleBubble();
         }
         itemsSelected.Clear();
@@ -48,21 +48,32 @@ public class ObjectSelection : MonoBehaviour
 
     }
     public void IngredientClicked(Object ingredient){
-         //User has double clicked on the same item, selection has finished
-        if(lastObjectSelected == ingredient){
+        //User has double clicked on the same item, selection has finished
+        if (lastObjectSelected == ingredient)
+        {
             timerStarted = false;
             timeLeft = timerAmount;
 
             //Calculate the score based on the items selected
 
             //Destroy the items
-            for(int i = 0; i < itemsSelected.Count;i++){
+            int numberOfBubbles = itemsSelected.Count;
+            for (int i = 0; i < numberOfBubbles; i++)
+            {
+
+                GridSystem.instance.RemoveSlot(itemsSelected[i].SpawnIndex);
                 Destroy(itemsSelected[i].gameObject);
             }
             // Clear the list after destroying items
             itemsSelected.Clear();
+
+            ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
+            lastObjectSelected = null;
         }
-        lastObjectSelected = ingredient;
+        else
+        {
+            lastObjectSelected = ingredient;
+        }
     }
 
 

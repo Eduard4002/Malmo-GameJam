@@ -23,7 +23,7 @@ public struct CharacteristicDefinition
 public class Object : MonoBehaviour
 {
     public CharacteristicDefinition Characteristics;
-
+    public int SpawnIndex;
     private bool itemSelected;
     private GameObject bubbbleOverlay;
 
