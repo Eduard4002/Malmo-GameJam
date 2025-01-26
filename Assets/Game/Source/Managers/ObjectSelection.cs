@@ -21,12 +21,12 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			{
 				GridSystem.Instance.RemoveSlot(ingredients[i].SpawnIndex);
 				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
-				UIManager.instance.UpdateScore(numberOfBubbles * 2);
+				UIManager.Instance.UpdateScore(numberOfBubbles * 2);
 				ingredients[i].DeleteSelf();
 			}
 			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
 		}else{
-            UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
+            UIManager.Instance.UpdateScore(-(numberOfBubbles * 2));
 
         }
 	}

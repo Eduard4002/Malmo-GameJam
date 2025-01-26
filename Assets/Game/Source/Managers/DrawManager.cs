@@ -16,6 +16,8 @@ public class DrawManager : Singleton<DrawManager>
 	private float timer = 0;
 
 	private bool isDrawing = false;
+	private int firstPointIndex = 0;
+
 	private Vector2 lastPos;
 	private Vector2 startPos;
 	
@@ -125,7 +127,10 @@ public class DrawManager : Singleton<DrawManager>
 			var b = brush.GetPosition(i + 1);
 
 			if (Helpers.LineIntersection(endA, endB, a, b, ref intersection))
+			{
+				firstPointIndex = i;
 				return true;
+			}
 		}
 		return false;
 	}
@@ -134,7 +139,7 @@ public class DrawManager : Singleton<DrawManager>
 	{
 		var points = new Vector3[brush.positionCount];
 		brush.GetPositions(points);
-		poly.points = Helpers.ConvertToVector2Array(points);
+		poly.points = Helpers.ConvertToVector2Array(points, firstPointIndex);
 	}
 
 	private void UpdateVisual()

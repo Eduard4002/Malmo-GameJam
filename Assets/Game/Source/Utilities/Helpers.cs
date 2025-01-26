@@ -2,10 +2,10 @@ using UnityEngine;
 
 public static class Helpers
 {
-	public static Vector2[] ConvertToVector2Array(Vector3[] arr)
+	public static Vector2[] ConvertToVector2Array(Vector3[] arr, int startIndex = 0)
 	{
 		var result = new Vector2[arr.Length];
-		for (int i = 0; i < arr.Length; i++)
+		for (int i = startIndex; i < arr.Length; i++)
 			result[i] = arr[i];
 		return result;
 	}
