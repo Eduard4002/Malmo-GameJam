@@ -576,8 +576,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9131190699909129706}
   - component: {fileID: 4004782544214525686}
+  - component: {fileID: 1640545832752689287}
   m_Layer: 0
-  m_Name: cat 1_0
+  m_Name: shelf cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,6 +654,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1640545832752689287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151257943653076232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1744e3054778c1b419ea4c0a086e1d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normal: {fileID: -8345435589167100473, guid: 8ada54e884ba66e419e541acbcd1713d, type: 3}
+  blink: {fileID: -7378112329498762355, guid: 3beb17fcad177e445a16c5ccb71206d4, type: 3}
 --- !u!1 &2293518353829619215
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +952,7 @@ GameObject:
   - component: {fileID: 3337272074352944127}
   - component: {fileID: 3779409769142948899}
   m_Layer: 0
-  m_Name: ceiling-cat
+  m_Name: ceiling cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
