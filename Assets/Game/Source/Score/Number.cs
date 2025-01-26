@@ -2,8 +2,8 @@ using UnityEngine;
 public class Number : MonoBehaviour
 {
 	private Digit[] digits;
-	private int curNumber;
-	private int targetNumber;
+	private float curNumber;
+	private float targetNumber;
 
 	private void Awake()
 	{
@@ -17,14 +17,12 @@ public class Number : MonoBehaviour
 
 	private void Update()
 	{
-		int number = Mathf.CeilToInt(Mathf.Lerp(curNumber, targetNumber, Time.deltaTime * 5));
-		if (number != curNumber)
-			Set(number);
+		curNumber = Mathf.Lerp(curNumber, targetNumber, Time.deltaTime * 5);
+		Set(Mathf.RoundToInt(curNumber));
 	}
 
 	private void Set(int number)
 	{
-		curNumber = number;
 		number = Mathf.Clamp(number, 0, 9999999);
 		string n = number.ToString("D7");
 
