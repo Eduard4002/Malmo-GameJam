@@ -3,10 +3,10 @@ public enum Shape
 {
     Frog,
     Fish,
-    Mushroom,
+    Skull,
     Chickenfeet,
     Eye,
-    Skull,
+    Mushroom,
 }
 
 public enum Texture
