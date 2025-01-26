@@ -33,7 +33,16 @@ public class ObjectSelection : Singleton<ObjectSelection>
 				UIManager.instance.UpdateScore(numberOfBubbles * 2);
 				ingredients[i].DeleteSelf();
 			}
-			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
+
+			if(GameManager.instance.currentStage == StarterStage.Other)
+			{
+                ObjectSpawner.instance.SpawnNewIngredients();
+            }
+			else
+			{
+                ObjectSpawner.instance.SpawnStarterIngredients(GameManager.instance.currentStage);
+            }
+
 		} else {
 			AudioManager.Instance.PlayOneShot(failureSound);
             AudioManager.Instance.PlayOneShotDelayed(witchFailureSound, 1f);

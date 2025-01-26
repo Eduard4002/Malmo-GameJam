@@ -57,6 +57,15 @@ public class Object : MonoBehaviour
         return GameManager.Characteristics[randomIndex];
     }
 
+    public void SetCharacteristics(CharacteristicDefinition characteristic)
+    {
+        this.Characteristics = characteristic;
+
+        sr = GetComponentInChildren<SpriteRenderer>();
+        sr.sprite = Characteristics.Sprite;
+        sr.color = Color.clear;
+    }
+
 	public void DeleteSelf()
 	{
         isDeleted = true;

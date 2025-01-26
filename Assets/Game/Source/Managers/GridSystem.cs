@@ -63,5 +63,9 @@ public class GridSystem : MonoBehaviour
         return slotsTaken.Count;
     }
     
+    public int NumberOfSpawnPositions()
+    {
+        return spawnPositions.Length;
+    }
 }
 
