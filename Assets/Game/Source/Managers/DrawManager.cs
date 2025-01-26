@@ -8,8 +8,7 @@ public class DrawManager : Singleton<DrawManager>
 	[SerializeField] private Color endColor;
 	[SerializeField] private Color flashColor;
 
-	[SerializeField]
-	private float drawTime = 5;
+	private float drawTime = 10;
 	private float timer = 0;
 
 	private bool isDrawing = false;
