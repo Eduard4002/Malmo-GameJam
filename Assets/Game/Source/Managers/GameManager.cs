@@ -12,6 +12,13 @@ public class GameManager : MonoBehaviour
 
     public bool gameStarted;
 
+    public StarterStage currentStage;
+
+    Sprite[] plainSpriteArray;
+    Sprite[] zigzagSpriteArray;
+    Sprite[] stripedSpriteArray;
+    Sprite[] dotsSpriteArray;
+
     private void Awake() {
         if (instance == null)
         {
@@ -26,10 +33,10 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Sprite[] plainSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-blue-filled");
-        Sprite[] zigzagSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-purple-zigzag"); //currently unused
-        Sprite[] stripedSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-red-striped");
-        Sprite[] dotsSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-yellow-dots");
+        plainSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-blue-filled");
+        zigzagSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-purple-zigzag"); //currently unused
+        stripedSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-red-striped");
+        dotsSpriteArray = Resources.LoadAll<Sprite>("Sprites/Ingredients/Ingredients-yellow-dots");
 
         //0 = frog
         //1 = fish
@@ -64,11 +71,67 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(){
         gameStarted = true;
-        ObjectSpawner.instance.SpawnNewIngredients(ObjectSpawner.instance.maxAmount);
         UIManager.instance.UpdateScore(-UIManager.instance.GetScore());
+        ObjectSpawner.instance.SpawnStarterIngredients(currentStage);
+        Cursor.instance.ToggleWand(true);
     }
     public void StopGame(){
         gameStarted = false;
         ObjectSpawner.instance.ClearAllObjects();
+    }
+
+    public void ChangeCharacteristicsPool()
+    {
+
+    }
+
+    public List<CharacteristicDefinition> GetCharacteristicsForStage(StarterStage stage)
+    {
+        var initial = new List<CharacteristicDefinition>()
+                {
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = stripedSpriteArray[0]
+                    }
+                };
+        switch (stage)
+        {
+            case StarterStage.Stage2:
+                return new List<CharacteristicDefinition>()
+                {
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = stripedSpriteArray[0]
+                    },
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Frog, Texture = Texture.Plain, Sprite = plainSpriteArray[0]
+                    }
+                };
+            case StarterStage.Stage3:
+                return new List<CharacteristicDefinition>()
+                {
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = stripedSpriteArray[0]
+                    },
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = stripedSpriteArray[4]
+                    },
+                    new CharacteristicDefinition()
+                    {
+                        Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = stripedSpriteArray[4]
+                    }
+                };
+            case StarterStage.Stage1:
+            default:
+                return initial;
+        }
+    }
+
+    public void IncrementGameStarterStage()
+    {
+        currentStage++;
     }
 }

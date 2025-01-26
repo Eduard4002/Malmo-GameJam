@@ -1,0 +1,5265 @@
+fileFormatVersion: 2
+guid: b078cd107a0fa0d40824f405a13af560
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5934426167403820858
+    second: jar_0
+  - first:
+      213: -7584336633968741926
+    second: jar_1
+  - first:
+      213: -3755054265534780527
+    second: jar_2
+  - first:
+      213: -5425610677403298241
+    second: jar_3
+  - first:
+      213: -554830389498970707
+    second: jar_4
+  - first:
+      213: -118843666203460909
+    second: jar_5
+  - first:
+      213: 6972192181665869937
+    second: jar_6
+  - first:
+      213: 2507232091968575787
+    second: jar_7
+  - first:
+      213: -4984048313540196450
+    second: jar_8
+  - first:
+      213: -8725394489020639597
+    second: jar_9
+  - first:
+      213: 5743879320926165706
+    second: jar_10
+  - first:
+      213: -7982732314933500205
+    second: jar_11
+  - first:
+      213: 6828628420041223464
+    second: jar_12
+  - first:
+      213: -3209497812619593135
+    second: jar_13
+  - first:
+      213: -1101017962355621263
+    second: jar_14
+  - first:
+      213: 7862127487309378
+    second: jar_15
+  - first:
+      213: -8325717748033847252
+    second: jar_16
+  - first:
+      213: -2987320539150404276
+    second: jar_17
+  - first:
+      213: -5014424159481187932
+    second: jar_18
+  - first:
+      213: -7668830491755957052
+    second: jar_19
+  - first:
+      213: -7580817817901831313
+    second: jar_20
+  - first:
+      213: 860633068192103554
+    second: jar_21
+  - first:
+      213: 8079339373494618939
+    second: jar_22
+  - first:
+      213: 6396698239600876741
+    second: jar_23
+  - first:
+      213: 2008593921932443099
+    second: jar_24
+  - first:
+      213: 5909622913393177312
+    second: jar_25
+  - first:
+      213: -7119242622456700107
+    second: jar_26
+  - first:
+      213: 4308935731191568900
+    second: jar_27
+  - first:
+      213: 3383393192716982024
+    second: jar_28
+  - first:
+      213: -8072316042308500797
+    second: jar_29
+  - first:
+      213: 5524891831843358136
+    second: jar_30
+  - first:
+      213: -1458496989430118522
+    second: jar_31
+  - first:
+      213: 5492777916677050501
+    second: jar_32
+  - first:
+      213: 9129588442224176212
+    second: jar_33
+  - first:
+      213: -4552400930875127890
+    second: jar_34
+  - first:
+      213: 2832905558304362837
+    second: jar_35
+  - first:
+      213: -5251779204577746607
+    second: jar_36
+  - first:
+      213: 3727198383196781759
+    second: jar_37
+  - first:
+      213: -7169058950098547933
+    second: jar_38
+  - first:
+      213: -7905478670397241389
+    second: jar_39
+  - first:
+      213: 4769055515324351178
+    second: jar_40
+  - first:
+      213: 2052446606722916430
+    second: jar_41
+  - first:
+      213: 5685313160948291380
+    second: jar_42
+  - first:
+      213: -7135696903995098372
+    second: jar_43
+  - first:
+      213: 7683418417266315628
+    second: jar_44
+  - first:
+      213: 1300249207181207029
+    second: jar_45
+  - first:
+      213: 533674353184172526
+    second: jar_46
+  - first:
+      213: -3406827283325840117
+    second: jar_47
+  - first:
+      213: 8544818644570509668
+    second: jar_48
+  - first:
+      213: -778787893516122607
+    second: jar_49
+  - first:
+      213: -3731729555958745857
+    second: jar_50
+  - first:
+      213: 5382617010494101894
+    second: jar_51
+  - first:
+      213: -9057867778556634607
+    second: jar_52
+  - first:
+      213: 296634784220791940
+    second: jar_53
+  - first:
+      213: -3738156093628690446
+    second: jar_54
+  - first:
+      213: -2074234289976000205
+    second: jar_55
+  - first:
+      213: -1587804034785576718
+    second: jar_56
+  - first:
+      213: 7658643195739494122
+    second: jar_57
+  - first:
+      213: -8902443120559123392
+    second: jar_58
+  - first:
+      213: -7380285158171885402
+    second: jar_59
+  - first:
+      213: 8422268089502799755
+    second: jar_60
+  - first:
+      213: -6311787042465670787
+    second: jar_61
+  - first:
+      213: -8168718562177886857
+    second: jar_62
+  - first:
+      213: 6112046385212376216
+    second: jar_63
+  - first:
+      213: 4573938077845055729
+    second: jar_64
+  - first:
+      213: -3220841560695712188
+    second: jar_65
+  - first:
+      213: 7610973774619579521
+    second: jar_66
+  - first:
+      213: 3852309760481777539
+    second: jar_67
+  - first:
+      213: 8266539819780021925
+    second: jar_68
+  - first:
+      213: 7711806533943914835
+    second: jar_69
+  - first:
+      213: 8885199665964847375
+    second: jar_70
+  - first:
+      213: -776493825529114334
+    second: jar_71
+  - first:
+      213: -8183524089700510082
+    second: jar_72
+  - first:
+      213: 5196125520931160060
+    second: jar_73
+  - first:
+      213: 1172898670533065890
+    second: jar_74
+  - first:
+      213: -7214190582296524332
+    second: jar_75
+  - first:
+      213: -3355266269322525228
+    second: jar_76
+  - first:
+      213: -4142886287331369888
+    second: jar_77
+  - first:
+      213: -2214973061646817718
+    second: jar_78
+  - first:
+      213: -8427878153856836558
+    second: jar_79
+  - first:
+      213: -4466279599576702867
+    second: jar_80
+  - first:
+      213: 911241046941750271
+    second: jar_81
+  - first:
+      213: -8935930634582659163
+    second: jar_82
+  - first:
+      213: -7843531498170574440
+    second: jar_83
+  - first:
+      213: -3502510579861154637
+    second: jar_84
+  - first:
+      213: 6039502465859543881
+    second: jar_85
+  - first:
+      213: 5446533204512218158
+    second: jar_86
+  - first:
+      213: -1763270962977327171
+    second: jar_87
+  - first:
+      213: -7619468003914192883
+    second: jar_88
+  - first:
+      213: -9045687484704086866
+    second: jar_89
+  - first:
+      213: -426122740913168292
+    second: jar_90
+  - first:
+      213: 4540891532930119662
+    second: jar_91
+  - first:
+      213: -889424636908522608
+    second: jar_92
+  - first:
+      213: -3965171454494754504
+    second: jar_93
+  - first:
+      213: 709049024513310586
+    second: jar_94
+  - first:
+      213: 7619433154384466698
+    second: jar_95
+  - first:
+      213: -5122419697492673972
+    second: jar_96
+  - first:
+      213: -273578191066286480
+    second: jar_97
+  - first:
+      213: -6154633525778690660
+    second: jar_98
+  - first:
+      213: -3118847723161721845
+    second: jar_99
+  - first:
+      213: -461557074734326141
+    second: jar_100
+  - first:
+      213: 8108881415723447635
+    second: jar_101
+  - first:
+      213: -2247746983943781979
+    second: jar_102
+  - first:
+      213: 3042838334234292569
+    second: jar_103
+  - first:
+      213: -1433922831623980673
+    second: jar_104
+  - first:
+      213: -1163936370392834770
+    second: jar_105
+  - first:
+      213: -2413118134841891680
+    second: jar_106
+  - first:
+      213: 5812158569232483331
+    second: jar_107
+  - first:
+      213: -7528239982783161811
+    second: jar_108
+  - first:
+      213: -5727616236436373364
+    second: jar_109
+  - first:
+      213: 5158653484921934052
+    second: jar_110
+  - first:
+      213: 2672451584304979006
+    second: jar_111
+  - first:
+      213: 503681558054364524
+    second: jar_112
+  - first:
+      213: -6926317138904816972
+    second: jar_113
+  - first:
+      213: -4450972394410201575
+    second: jar_114
+  - first:
+      213: -3718600109203191799
+    second: jar_115
+  - first:
+      213: -5819191100750353876
+    second: jar_116
+  - first:
+      213: -4309805291897101588
+    second: jar_117
+  - first:
+      213: 2897557729831352462
+    second: jar_118
+  - first:
+      213: 688824524738560287
+    second: jar_119
+  - first:
+      213: -4359782779417072567
+    second: jar_120
+  - first:
+      213: -5042747327038321144
+    second: jar_121
+  - first:
+      213: -7202288634076081064
+    second: jar_122
+  - first:
+      213: -1014877166095045787
+    second: jar_123
+  - first:
+      213: -3353045117792225866
+    second: jar_124
+  - first:
+      213: -4342048160527419971
+    second: jar_125
+  - first:
+      213: -2568037859487705040
+    second: jar_126
+  - first:
+      213: -7707242128823855963
+    second: jar_127
+  - first:
+      213: 5074249863983357610
+    second: jar_128
+  - first:
+      213: -1812983942195916929
+    second: jar_129
+  - first:
+      213: -6104439989655888990
+    second: jar_130
+  - first:
+      213: -6793332138703954092
+    second: jar_131
+  - first:
+      213: -1772420576393041481
+    second: jar_132
+  - first:
+      213: 2162729611278309924
+    second: jar_133
+  - first:
+      213: -1205097831898552812
+    second: jar_134
+  - first:
+      213: -1783386352151884229
+    second: jar_135
+  - first:
+      213: -65978956926820788
+    second: jar_136
+  - first:
+      213: -7232840654590407891
+    second: jar_137
+  - first:
+      213: 3370079021607855044
+    second: jar_138
+  - first:
+      213: -158431696003841405
+    second: jar_139
+  - first:
+      213: -7720484846225437330
+    second: jar_140
+  - first:
+      213: 2135115866297226962
+    second: jar_141
+  - first:
+      213: 1500939641780730179
+    second: jar_142
+  - first:
+      213: -4570801056474753337
+    second: jar_143
+  - first:
+      213: -364098639164719587
+    second: jar_144
+  - first:
+      213: 3563233213339293922
+    second: jar_145
+  - first:
+      213: -1771544643579263026
+    second: jar_146
+  - first:
+      213: 6649297560927097885
+    second: jar_147
+  - first:
+      213: -4967039898145817402
+    second: jar_148
+  - first:
+      213: -7796102354741485836
+    second: jar_149
+  - first:
+      213: 8290558689475305938
+    second: jar_150
+  - first:
+      213: -138399710195974361
+    second: jar_151
+  - first:
+      213: -2088597133639057581
+    second: jar_152
+  - first:
+      213: -8207493677246180169
+    second: jar_153
+  - first:
+      213: 5006283391639397339
+    second: jar_154
+  - first:
+      213: 6259762486870622787
+    second: jar_155
+  - first:
+      213: -1159280212211395495
+    second: jar_156
+  - first:
+      213: -2639660623700419657
+    second: jar_157
+  - first:
+      213: 6765716275421018531
+    second: jar_158
+  - first:
+      213: 6720597829228055485
+    second: jar_159
+  - first:
+      213: -450625651286987110
+    second: jar_160
+  - first:
+      213: -7615524780810742520
+    second: jar_161
+  - first:
+      213: -4082574342193896988
+    second: jar_162
+  - first:
+      213: -1866073680274107094
+    second: jar_163
+  - first:
+      213: -7002691043301898408
+    second: jar_164
+  - first:
+      213: -9052914852096177760
+    second: jar_165
+  - first:
+      213: -5261901736603639236
+    second: jar_166
+  - first:
+      213: 3204305043219101554
+    second: jar_167
+  - first:
+      213: 1296341542929804111
+    second: jar_168
+  - first:
+      213: 4886851827787837471
+    second: jar_169
+  - first:
+      213: 234170790371071229
+    second: jar_170
+  - first:
+      213: 8390286890675216846
+    second: jar_171
+  - first:
+      213: -2653003452439824683
+    second: jar_172
+  - first:
+      213: -2723827809812729426
+    second: jar_173
+  - first:
+      213: -8227977505359958460
+    second: jar_174
+  - first:
+      213: -5648032089034186895
+    second: jar_175
+  - first:
+      213: -3914787336342571133
+    second: jar_176
+  - first:
+      213: -6661955903404111759
+    second: jar_177
+  - first:
+      213: 4457535480261721963
+    second: jar_178
+  - first:
+      213: -1658488860306718728
+    second: jar_179
+  - first:
+      213: -1477536058521571368
+    second: jar_180
+  - first:
+      213: -5105747818495150441
+    second: jar_181
+  - first:
+      213: -3008118613889851173
+    second: jar_182
+  - first:
+      213: 4825954607583641205
+    second: jar_183
+  - first:
+      213: 718398484685973717
+    second: jar_184
+  - first:
+      213: 8309573152426242353
+    second: jar_185
+  - first:
+      213: 8168668943772335252
+    second: jar_186
+  - first:
+      213: -1152489088167243011
+    second: jar_187
+  - first:
+      213: 6806665884528903711
+    second: jar_188
+  - first:
+      213: -7097795422045276159
+    second: jar_189
+  - first:
+      213: 9045105490641554134
+    second: jar_190
+  - first:
+      213: 1878263198619883293
+    second: jar_191
+  - first:
+      213: 2416225716223374923
+    second: jar_192
+  - first:
+      213: -1423888467741942470
+    second: jar_193
+  - first:
+      213: 6536814372732491400
+    second: jar_194
+  - first:
+      213: -8707858654820972418
+    second: jar_195
+  - first:
+      213: -6218150212489034601
+    second: jar_196
+  - first:
+      213: 989736793752603913
+    second: jar_197
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1482
+        width: 3840
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3733e548215b5250800000000000000
+      internalID: 5934426167403820858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1541
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1bf43d3060fb690800000000000000
+      internalID: -7584336633968741926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1543
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19beb766a0e53ebc0800000000000000
+      internalID: -3755054265534780527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1542
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f365fc3c5db54b4b0800000000000000
+      internalID: -5425610677403298241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1539
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad725b43b8dc48f0800000000000000
+      internalID: -554830389498970707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1539
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da3324b058c95ef0800000000000000
+      internalID: -118843666203460909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1543
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17033f559d332c060800000000000000
+      internalID: 6972192181665869937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1540
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b291f33cd4a7bc220800000000000000
+      internalID: 2507232091968575787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_8
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1541
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e974d08277a15dab0800000000000000
+      internalID: -4984048313540196450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_9
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1542
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39616ccf0fb29e680800000000000000
+      internalID: -8725394489020639597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1543
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca148c5fcb56bf40800000000000000
+      internalID: 5743879320926165706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1543
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d66b5ff043a73190800000000000000
+      internalID: -7982732314933500205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_12
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1538
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82da1bf4e5924ce50800000000000000
+      internalID: 6828628420041223464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_13
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1542
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a7a6b7eb29573d0800000000000000
+      internalID: -3209497812619593135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1541
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17208762ff568b0f0800000000000000
+      internalID: -1101017962355621263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_15
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1532
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2465f04309eeb1000800000000000000
+      internalID: 7862127487309378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1534
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c200748d1db157c80800000000000000
+      internalID: -8325717748033847252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_17
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1543
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4536b11cc7ea86d0800000000000000
+      internalID: -2987320539150404276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_18
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1535
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1bcf46bcf296ab0800000000000000
+      internalID: -5014424159481187932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_19
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1539
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4b3388c47d29590800000000000000
+      internalID: -7668830491755957052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_20
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1541
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b62090c568bc690800000000000000
+      internalID: -7580817817901831313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1537
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c7b87373591fb00800000000000000
+      internalID: 860633068192103554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_22
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1537
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b49f0aa549f1070800000000000000
+      internalID: 8079339373494618939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_23
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1530
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccd6c26823a5c850800000000000000
+      internalID: 6396698239600876741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_24
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1542
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddbacea785ffdb10800000000000000
+      internalID: 2008593921932443099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_25
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1537
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e23f4daab2330250800000000000000
+      internalID: 5909622913393177312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_26
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1538
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533e5a2ed8e533d90800000000000000
+      internalID: -7119242622456700107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_27
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1540
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a59a1c73a6ccb30800000000000000
+      internalID: 4308935731191568900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_28
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1538
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807de5bce2a34fe20800000000000000
+      internalID: 3383393192716982024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_29
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1541
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2c387145f59ff80800000000000000
+      internalID: -8072316042308500797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_30
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1539
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b50b7359db5cac40800000000000000
+      internalID: 5524891831843358136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_31
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1539
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6878a0f27b062cbe0800000000000000
+      internalID: -1458496989430118522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_32
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1539
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58055a9c9644a3c40800000000000000
+      internalID: 5492777916677050501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_33
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1540
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ca84c4150d2be70800000000000000
+      internalID: 9129588442224176212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_34
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1540
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7c708197f92d0c0800000000000000
+      internalID: -4552400930875127890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_35
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1542
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55116fc8890805720800000000000000
+      internalID: 2832905558304362837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_36
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1536
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1512c5873aeed17b0800000000000000
+      internalID: -5251779204577746607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_37
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1538
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcbad59e2ba9b330800000000000000
+      internalID: 3727198383196781759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_38
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1539
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b8a814ed2628c90800000000000000
+      internalID: -7169058950098547933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_39
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1536
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d78b87c8091a4290800000000000000
+      internalID: -7905478670397241389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_40
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1542
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2860149b61f2240800000000000000
+      internalID: 4769055515324351178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_41
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1539
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40ec228051cb7c10800000000000000
+      internalID: 2052446606722916430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_42
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1530
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4371d23a23a46ee40800000000000000
+      internalID: 5685313160948291380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_43
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1542
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa748ce879e8fc90800000000000000
+      internalID: -7135696903995098372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_44
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 1538
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c615add875cf0aa60800000000000000
+      internalID: 7683418417266315628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_45
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1527
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5e481d3c96b0210800000000000000
+      internalID: 1300249207181207029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_46
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1541
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee967472ffdf76700800000000000000
+      internalID: 533674353184172526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_47
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 1538
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05114ec2a488b0d0800000000000000
+      internalID: -3406827283325840117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_48
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1540
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46192cbe84b459670800000000000000
+      internalID: 8544818644570509668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_49
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1539
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116c89b79803135f0800000000000000
+      internalID: -778787893516122607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_50
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1534
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4b04b8dbb363cc0800000000000000
+      internalID: -3731729555958745857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_51
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1536
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689d97817a5e2ba40800000000000000
+      internalID: 5382617010494101894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_52
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1539
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11adcacfe3dfb4280800000000000000
+      internalID: -9057867778556634607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_53
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1535
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484418db3cbdd1400800000000000000
+      internalID: 296634784220791940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_54
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1539
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffcc44a6d66f1cc0800000000000000
+      internalID: -3738156093628690446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_55
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1542
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331cb0d27e6d633e0800000000000000
+      internalID: -2074234289976000205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_56
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 1540
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f87ca594acf6f9e0800000000000000
+      internalID: -1587804034785576718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_57
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1537
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6d387c867f84a60800000000000000
+      internalID: 7658643195739494122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_58
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 1539
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04414f5262b247480800000000000000
+      internalID: -8902443120559123392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_59
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1537
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0c31640c5f39990800000000000000
+      internalID: -7380285158171885402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_60
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1537
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b871ced4438e1e470800000000000000
+      internalID: 8422268089502799755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_61
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1542
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d799beb40270868a0800000000000000
+      internalID: -6311787042465670787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_62
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 1539
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7755f375fb1e2ae80800000000000000
+      internalID: -8168718562177886857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_63
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 1534
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8944b49edc952d450800000000000000
+      internalID: 6112046385212376216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_64
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 1541
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f86692b274e97f30800000000000000
+      internalID: 4573938077845055729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_65
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 1541
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446dae05aa54d43d0800000000000000
+      internalID: -3220841560695712188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_66
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1539
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1849307c25c9f9960800000000000000
+      internalID: 7610973774619579521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_67
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1542
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38759461157267530800000000000000
+      internalID: 3852309760481777539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_68
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 1540
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae1c970b26a8b270800000000000000
+      internalID: 8266539819780021925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_69
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1542
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35173480f27d50b60800000000000000
+      internalID: 7711806533943914835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_70
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 1539
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01114835029e4b70800000000000000
+      internalID: 8885199665964847375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_71
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 1535
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2219d0fcaf65935f0800000000000000
+      internalID: -776493825529114334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_72
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1538
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e769c86d2384e6e80800000000000000
+      internalID: -8183524089700510082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_73
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 1536
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff717b81a85c1840800000000000000
+      internalID: 5196125520931160060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_74
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 1541
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acb6a66029f64010800000000000000
+      internalID: 1172898670533065890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_75
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 1539
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d94f3843eb02eb90800000000000000
+      internalID: -7214190582296524332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_76
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 1536
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d54e22ea13bf61d0800000000000000
+      internalID: -3355266269322525228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_77
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 1534
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cd6c22fd28186c0800000000000000
+      internalID: -4142886287331369888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_78
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 1540
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a466b716cb5d241e0800000000000000
+      internalID: -2214973061646817718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_79
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1538
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c961dc8792a0b80800000000000000
+      internalID: -8427878153856836558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_80
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 1533
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6028a71e569402c0800000000000000
+      internalID: -4466279599576702867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_81
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 1535
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3d7bb77e065ac00800000000000000
+      internalID: 911241046941750271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_82
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1540
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af6b24be623df380800000000000000
+      internalID: -8935930634582659163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_83
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 1535
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89994f2c8ad262390800000000000000
+      internalID: -7843531498170574440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_84
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 1540
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b414594f25946fc0800000000000000
+      internalID: -3502510579861154637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_85
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 1539
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94367a97e7f90d350800000000000000
+      internalID: 6039502465859543881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_86
+      rect:
+        serializedVersion: 2
+        x: 2775
+        y: 1539
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c1250b719f59b40800000000000000
+      internalID: 5446533204512218158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_87
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1536
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7b9f0c66a9787e0800000000000000
+      internalID: -1763270962977327171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_88
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 1540
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d086d395836324690800000000000000
+      internalID: -7619468003914192883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_89
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 1540
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea42405a823477280800000000000000
+      internalID: -9045687484704086866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_90
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 1541
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50a725ff9b161af0800000000000000
+      internalID: -426122740913168292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_91
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 1541
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7f0ef5acc740f30800000000000000
+      internalID: 4540891532930119662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_92
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 1539
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093369e410128a3f0800000000000000
+      internalID: -889424636908522608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_93
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 1537
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839325d0291e8f8c0800000000000000
+      internalID: -3965171454494754504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_94
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 1538
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ff372c45c07d900800000000000000
+      internalID: 709049024513310586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_95
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 1534
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a039bec951aadb960800000000000000
+      internalID: 7619433154384466698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_96
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 1539
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a3c74cc6289e8b0800000000000000
+      internalID: -5122419697492673972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_97
+      rect:
+        serializedVersion: 2
+        x: 3152
+        y: 1541
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076333fa51e043cf0800000000000000
+      internalID: -273578191066286480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_98
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 1540
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d404dba69569aa0800000000000000
+      internalID: -6154633525778690660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_99
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 1528
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04e8682580a7b4d0800000000000000
+      internalID: -3118847723161721845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_100
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 1540
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e54e439483899f0800000000000000
+      internalID: -461557074734326141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_101
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 1539
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35576f55fa8888070800000000000000
+      internalID: 8108881415723447635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_102
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 1538
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a14315f6066ec0e0800000000000000
+      internalID: -2247746983943781979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_103
+      rect:
+        serializedVersion: 2
+        x: 3430
+        y: 1537
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951f9f4e7555a3a20800000000000000
+      internalID: 3042838334234292569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_104
+      rect:
+        serializedVersion: 2
+        x: 3470
+        y: 1536
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79fab928cea91ce0800000000000000
+      internalID: -1433922831623980673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_105
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 1533
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dd395b90ed8dfe0800000000000000
+      internalID: -1163936370392834770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_106
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 1536
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a422b377d1e28ed0800000000000000
+      internalID: -2413118134841891680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_107
+      rect:
+        serializedVersion: 2
+        x: 3565
+        y: 1532
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3044851bc6fe8a050800000000000000
+      internalID: 5812158569232483331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_108
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1534
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a115a3f91568790800000000000000
+      internalID: -7528239982783161811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_109
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 1540
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c804371116b6380b0800000000000000
+      internalID: -5727616236436373364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_110
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 1533
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e05a184308379740800000000000000
+      internalID: 5158653484921934052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_111
+      rect:
+        serializedVersion: 2
+        x: 3666
+        y: 1533
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c9de18e84761520800000000000000
+      internalID: 2672451584304979006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_112
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 1539
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65eebb55bf6df600800000000000000
+      internalID: 503681558054364524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_113
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 1538
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2e0e56247c0ef90800000000000000
+      internalID: -6926317138904816972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_114
+      rect:
+        serializedVersion: 2
+        x: 3748
+        y: 1534
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e2c168038fa32c0800000000000000
+      internalID: -4450972394410201575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_115
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 1539
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908073517e0e46cc0800000000000000
+      internalID: -3718600109203191799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_116
+      rect:
+        serializedVersion: 2
+        x: 3788
+        y: 1529
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a29a776841e3fa0800000000000000
+      internalID: -5819191100750353876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_117
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1535
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2ef5ddbee7034c0800000000000000
+      internalID: -4309805291897101588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_118
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1535
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88f8c24761363820800000000000000
+      internalID: 2897557729831352462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_119
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1535
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f118e9571423f8900800000000000000
+      internalID: 688824524738560287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_120
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1531
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ceaf649a0fe73c0800000000000000
+      internalID: -4359782779417072567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_121
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1530
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e84df0600940ab0800000000000000
+      internalID: -5042747327038321144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_122
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1534
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854df0c85a45c0c90800000000000000
+      internalID: -7202288634076081064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_123
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1531
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bef30389e6ae1f0800000000000000
+      internalID: -1014877166095045787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_124
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1532
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5f2260b379771d0800000000000000
+      internalID: -3353045117792225866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_125
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1528
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5ff120432fdb3c0800000000000000
+      internalID: -4342048160527419971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_126
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1534
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0381b7f3c2f7c5cd0800000000000000
+      internalID: -2568037859487705040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_127
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1536
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a457895e106a0590800000000000000
+      internalID: -7707242128823855963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_128
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1534
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae5d44ed5b5b6640800000000000000
+      internalID: 5074249863983357610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_129
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1534
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fccedc5bcf6d6e0800000000000000
+      internalID: -1812983942195916929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_130
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1534
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab1fdf0c2ca84ba0800000000000000
+      internalID: -6104439989655888990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_131
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1534
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f5e47996c39b1a0800000000000000
+      internalID: -6793332138703954092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_132
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1530
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9ef7f50e81767e0800000000000000
+      internalID: -1772420576393041481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_133
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1533
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a56717f1f830e10800000000000000
+      internalID: 2162729611278309924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_134
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1533
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416e71228e1a64fe0800000000000000
+      internalID: -1205097831898552812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_135
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1534
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e05bebf832047e0800000000000000
+      internalID: -1783386352151884229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_136
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1533
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ed9bdfc78951ff0800000000000000
+      internalID: -65978956926820788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_137
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1526
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b8222feb9cf9b90800000000000000
+      internalID: -7232840654590407891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_138
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1532
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3aee3c30de4ce20800000000000000
+      internalID: 3370079021607855044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_139
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1531
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382478e36332dcdf0800000000000000
+      internalID: -158431696003841405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_140
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1529
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d42feefe35bd490800000000000000
+      internalID: -7720484846225437330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_141
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1532
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d652fc619471ad10800000000000000
+      internalID: 2135115866297226962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_142
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 1531
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34974a1e6a864d410800000000000000
+      internalID: 1500939641780730179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_143
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1534
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c697d108a04190c0800000000000000
+      internalID: -4570801056474753337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_144
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 1528
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e326d773672faf0800000000000000
+      internalID: -364098639164719587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_145
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 1534
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e856fc8ab5237130800000000000000
+      internalID: 3563233213339293922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_146
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 1528
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec746bf58853a67e0800000000000000
+      internalID: -1771544643579263026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_147
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1532
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d145ee4f6ec074c50800000000000000
+      internalID: 6649297560927097885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_148
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 1529
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc73d57787811bb0800000000000000
+      internalID: -4967039898145817402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_149
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1530
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe1c01c63eaec390800000000000000
+      internalID: -7796102354741485836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_150
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 1533
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d124bbe33bfd0370800000000000000
+      internalID: 8290558689475305938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_151
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 1527
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f70c4623e441ef0800000000000000
+      internalID: -138399710195974361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_152
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 1531
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f7b8a09ffc303e0800000000000000
+      internalID: -2088597133639057581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_153
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1533
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b41a775cff191e80800000000000000
+      internalID: -8207493677246180169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_154
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 1522
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3aa936834e97540800000000000000
+      internalID: 5006283391639397339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_155
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 1536
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3424d30f0d42fd650800000000000000
+      internalID: 6259762486870622787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_156
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1536
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95410040ac869efe0800000000000000
+      internalID: -1159280212211395495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_157
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 1531
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb10c4f5aa0e5bd0800000000000000
+      internalID: -2639660623700419657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_158
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 1532
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a97c8f2b17a4ed50800000000000000
+      internalID: 6765716275421018531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_159
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 1534
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb46615e1c544d50800000000000000
+      internalID: 6720597829228055485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_160
+      rect:
+        serializedVersion: 2
+        x: 2885
+        y: 1532
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e2c509b5e0fb9f0800000000000000
+      internalID: -450625651286987110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_161
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 1533
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80557958f88305690800000000000000
+      internalID: -7615524780810742520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_162
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 1534
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1a8642448c757c0800000000000000
+      internalID: -4082574342193896988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_163
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 1533
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a255e8aefdf5a16e0800000000000000
+      internalID: -1866073680274107094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_164
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1526
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8574e24199171de90800000000000000
+      internalID: -7002691043301898408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_165
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 1533
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a903fa08e59d5280800000000000000
+      internalID: -9052914852096177760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_166
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 1532
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32aab2df38f9f6b0800000000000000
+      internalID: -5261901736603639236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_167
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 1532
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277311da57af77c20800000000000000
+      internalID: 3204305043219101554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_168
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 1532
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ba9e5d3c78df110800000000000000
+      internalID: 1296341542929804111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_169
+      rect:
+        serializedVersion: 2
+        x: 3622
+        y: 1527
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10334188d591d340800000000000000
+      internalID: 4886851827787837471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_170
+      rect:
+        serializedVersion: 2
+        x: 3758
+        y: 1532
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df417d8d711ff3300800000000000000
+      internalID: 234170790371071229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_171
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1527
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec120523979407470800000000000000
+      internalID: 8390286890675216846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_172
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1524
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6707d8a63ae2bd0800000000000000
+      internalID: -2653003452439824683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_173
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1528
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea138c6d905033ad0800000000000000
+      internalID: -2723827809812729426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_174
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1527
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e6d157d0a50dd80800000000000000
+      internalID: -8227977505359958460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_175
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 1525
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f1c155db82e91b0800000000000000
+      internalID: -5648032089034186895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_176
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 1526
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3877a16b8a1eba9c0800000000000000
+      internalID: -3914787336342571133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_177
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1527
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1780844076afb83a0800000000000000
+      internalID: -6661955903404111759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_178
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 1527
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f33baf6e85cdd30800000000000000
+      internalID: 4457535480261721963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_179
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 1526
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffb9792b2ddbf8e0800000000000000
+      internalID: -1658488860306718728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_180
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 1526
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfadf878ccbe7be0800000000000000
+      internalID: -1477536058521571368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_181
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 1529
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796fed5196db429b0800000000000000
+      internalID: -5105747818495150441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_182
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1517
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0ead0fe040146d0800000000000000
+      internalID: -3008118613889851173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_183
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 1518
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ebe27852c39f240800000000000000
+      internalID: 4825954607583641205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_184
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 924
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8e2e69d9348f900800000000000000
+      internalID: 718398484685973717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_185
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 497
+        width: 341
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1313d7191c8815370800000000000000
+      internalID: 8309573152426242353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_186
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 591
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cb059ff11fc5170800000000000000
+      internalID: 8168668943772335252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_187
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 612
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2174cc7498100f0800000000000000
+      internalID: -1152489088167243011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_188
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 622
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f168d180f82267e50800000000000000
+      internalID: 6806665884528903711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_189
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 631
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108f89c5ba09f7d90800000000000000
+      internalID: -7097795422045276159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_190
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 640
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da00ad458ba68d70800000000000000
+      internalID: 9045105490641554134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_191
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 661
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d175d6c7d6ee01a10800000000000000
+      internalID: 1878263198619883293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_192
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 665
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4678a8bc78288120800000000000000
+      internalID: 2416225716223374923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_193
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 670
+        width: 246
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d57709bf45d3ce0800000000000000
+      internalID: -1423888467741942470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_194
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 162
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8865369d90e67ba50800000000000000
+      internalID: 6536814372732491400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_195
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 68
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78c51d80b8772780800000000000000
+      internalID: -8707858654820972418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_196
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 91
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7944290b351b4b9a0800000000000000
+      internalID: -6218150212489034601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jar_197
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 71
+        width: 201
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d02ccbe504cbd00800000000000000
+      internalID: 989736793752603913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jar_0: 5934426167403820858
+      jar_1: -7584336633968741926
+      jar_10: 5743879320926165706
+      jar_100: -461557074734326141
+      jar_101: 8108881415723447635
+      jar_102: -2247746983943781979
+      jar_103: 3042838334234292569
+      jar_104: -1433922831623980673
+      jar_105: -1163936370392834770
+      jar_106: -2413118134841891680
+      jar_107: 5812158569232483331
+      jar_108: -7528239982783161811
+      jar_109: -5727616236436373364
+      jar_11: -7982732314933500205
+      jar_110: 5158653484921934052
+      jar_111: 2672451584304979006
+      jar_112: 503681558054364524
+      jar_113: -6926317138904816972
+      jar_114: -4450972394410201575
+      jar_115: -3718600109203191799
+      jar_116: -5819191100750353876
+      jar_117: -4309805291897101588
+      jar_118: 2897557729831352462
+      jar_119: 688824524738560287
+      jar_12: 6828628420041223464
+      jar_120: -4359782779417072567
+      jar_121: -5042747327038321144
+      jar_122: -7202288634076081064
+      jar_123: -1014877166095045787
+      jar_124: -3353045117792225866
+      jar_125: -4342048160527419971
+      jar_126: -2568037859487705040
+      jar_127: -7707242128823855963
+      jar_128: 5074249863983357610
+      jar_129: -1812983942195916929
+      jar_13: -3209497812619593135
+      jar_130: -6104439989655888990
+      jar_131: -6793332138703954092
+      jar_132: -1772420576393041481
+      jar_133: 2162729611278309924
+      jar_134: -1205097831898552812
+      jar_135: -1783386352151884229
+      jar_136: -65978956926820788
+      jar_137: -7232840654590407891
+      jar_138: 3370079021607855044
+      jar_139: -158431696003841405
+      jar_14: -1101017962355621263
+      jar_140: -7720484846225437330
+      jar_141: 2135115866297226962
+      jar_142: 1500939641780730179
+      jar_143: -4570801056474753337
+      jar_144: -364098639164719587
+      jar_145: 3563233213339293922
+      jar_146: -1771544643579263026
+      jar_147: 6649297560927097885
+      jar_148: -4967039898145817402
+      jar_149: -7796102354741485836
+      jar_15: 7862127487309378
+      jar_150: 8290558689475305938
+      jar_151: -138399710195974361
+      jar_152: -2088597133639057581
+      jar_153: -8207493677246180169
+      jar_154: 5006283391639397339
+      jar_155: 6259762486870622787
+      jar_156: -1159280212211395495
+      jar_157: -2639660623700419657
+      jar_158: 6765716275421018531
+      jar_159: 6720597829228055485
+      jar_16: -8325717748033847252
+      jar_160: -450625651286987110
+      jar_161: -7615524780810742520
+      jar_162: -4082574342193896988
+      jar_163: -1866073680274107094
+      jar_164: -7002691043301898408
+      jar_165: -9052914852096177760
+      jar_166: -5261901736603639236
+      jar_167: 3204305043219101554
+      jar_168: 1296341542929804111
+      jar_169: 4886851827787837471
+      jar_17: -2987320539150404276
+      jar_170: 234170790371071229
+      jar_171: 8390286890675216846
+      jar_172: -2653003452439824683
+      jar_173: -2723827809812729426
+      jar_174: -8227977505359958460
+      jar_175: -5648032089034186895
+      jar_176: -3914787336342571133
+      jar_177: -6661955903404111759
+      jar_178: 4457535480261721963
+      jar_179: -1658488860306718728
+      jar_18: -5014424159481187932
+      jar_180: -1477536058521571368
+      jar_181: -5105747818495150441
+      jar_182: -3008118613889851173
+      jar_183: 4825954607583641205
+      jar_184: 718398484685973717
+      jar_185: 8309573152426242353
+      jar_186: 8168668943772335252
+      jar_187: -1152489088167243011
+      jar_188: 6806665884528903711
+      jar_189: -7097795422045276159
+      jar_19: -7668830491755957052
+      jar_190: 9045105490641554134
+      jar_191: 1878263198619883293
+      jar_192: 2416225716223374923
+      jar_193: -1423888467741942470
+      jar_194: 6536814372732491400
+      jar_195: -8707858654820972418
+      jar_196: -6218150212489034601
+      jar_197: 989736793752603913
+      jar_2: -3755054265534780527
+      jar_20: -7580817817901831313
+      jar_21: 860633068192103554
+      jar_22: 8079339373494618939
+      jar_23: 6396698239600876741
+      jar_24: 2008593921932443099
+      jar_25: 5909622913393177312
+      jar_26: -7119242622456700107
+      jar_27: 4308935731191568900
+      jar_28: 3383393192716982024
+      jar_29: -8072316042308500797
+      jar_3: -5425610677403298241
+      jar_30: 5524891831843358136
+      jar_31: -1458496989430118522
+      jar_32: 5492777916677050501
+      jar_33: 9129588442224176212
+      jar_34: -4552400930875127890
+      jar_35: 2832905558304362837
+      jar_36: -5251779204577746607
+      jar_37: 3727198383196781759
+      jar_38: -7169058950098547933
+      jar_39: -7905478670397241389
+      jar_4: -554830389498970707
+      jar_40: 4769055515324351178
+      jar_41: 2052446606722916430
+      jar_42: 5685313160948291380
+      jar_43: -7135696903995098372
+      jar_44: 7683418417266315628
+      jar_45: 1300249207181207029
+      jar_46: 533674353184172526
+      jar_47: -3406827283325840117
+      jar_48: 8544818644570509668
+      jar_49: -778787893516122607
+      jar_5: -118843666203460909
+      jar_50: -3731729555958745857
+      jar_51: 5382617010494101894
+      jar_52: -9057867778556634607
+      jar_53: 296634784220791940
+      jar_54: -3738156093628690446
+      jar_55: -2074234289976000205
+      jar_56: -1587804034785576718
+      jar_57: 7658643195739494122
+      jar_58: -8902443120559123392
+      jar_59: -7380285158171885402
+      jar_6: 6972192181665869937
+      jar_60: 8422268089502799755
+      jar_61: -6311787042465670787
+      jar_62: -8168718562177886857
+      jar_63: 6112046385212376216
+      jar_64: 4573938077845055729
+      jar_65: -3220841560695712188
+      jar_66: 7610973774619579521
+      jar_67: 3852309760481777539
+      jar_68: 8266539819780021925
+      jar_69: 7711806533943914835
+      jar_7: 2507232091968575787
+      jar_70: 8885199665964847375
+      jar_71: -776493825529114334
+      jar_72: -8183524089700510082
+      jar_73: 5196125520931160060
+      jar_74: 1172898670533065890
+      jar_75: -7214190582296524332
+      jar_76: -3355266269322525228
+      jar_77: -4142886287331369888
+      jar_78: -2214973061646817718
+      jar_79: -8427878153856836558
+      jar_8: -4984048313540196450
+      jar_80: -4466279599576702867
+      jar_81: 911241046941750271
+      jar_82: -8935930634582659163
+      jar_83: -7843531498170574440
+      jar_84: -3502510579861154637
+      jar_85: 6039502465859543881
+      jar_86: 5446533204512218158
+      jar_87: -1763270962977327171
+      jar_88: -7619468003914192883
+      jar_89: -9045687484704086866
+      jar_9: -8725394489020639597
+      jar_90: -426122740913168292
+      jar_91: 4540891532930119662
+      jar_92: -889424636908522608
+      jar_93: -3965171454494754504
+      jar_94: 709049024513310586
+      jar_95: 7619433154384466698
+      jar_96: -5122419697492673972
+      jar_97: -273578191066286480
+      jar_98: -6154633525778690660
+      jar_99: -3118847723161721845
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

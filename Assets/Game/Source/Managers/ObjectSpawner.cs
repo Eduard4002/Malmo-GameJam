@@ -27,31 +27,73 @@ public class ObjectSpawner : MonoBehaviour
         }
     }
 
-    public void SpawnNewIngredients(int numberOfIngredients)
+    public void SpawnNewIngredients()
     {
         int slotsFree = maxAmount - GridSystem.instance.NumberOfSlotsTaken();
-        int numberToSpawn = numberOfIngredients <= slotsFree ? numberOfIngredients : slotsFree;
 
-        Debug.Log($"Spawning {numberOfIngredients} new ingredients");
-        for(int i = 0; i < numberToSpawn; i++)
+        Debug.Log($"Spawning {slotsFree} new ingredients");
+        for(int i = 0; i < slotsFree; i++)
         {
             Debug.Log($"Spawning ingredient {i}");
-            (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
-
-            GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
-            ingredient.GetComponent<Object>().SpawnIndex = index;
-            ingredient.transform.parent = cauldronObject.transform;
-            objectsSpawned.Add(ingredient.GetComponent<Object>());
+            SpawnSingleIngredient();
         }
         bool validMoves = HasValidMoves();
         if(!validMoves){
             Debug.Log("No valid moves, spawning new ingredients");
             ClearAllObjects();
-            SpawnNewIngredients(maxAmount);
+            SpawnNewIngredients();
 
         }
         Debug.Log("Game is playable: " + validMoves);
     }
+
+    private void SpawnSingleIngredient(CharacteristicDefinition characteristic)
+    {
+        (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
+
+        GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
+        ingredient.GetComponent<Object>().SpawnIndex = index;
+        ingredient.GetComponent<Object>().SetCharacteristics(characteristic);
+        ingredient.transform.parent = cauldronObject.transform;
+        objectsSpawned.Add(ingredient.GetComponent<Object>());
+    }
+
+    private void SpawnSingleIngredient()
+    {
+        (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
+
+        GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
+        ingredient.GetComponent<Object>().SpawnIndex = index;
+        ingredient.transform.parent = cauldronObject.transform;
+        objectsSpawned.Add(ingredient.GetComponent<Object>());
+    }
+
+    public void SpawnStarterIngredients(StarterStage stage)
+    {
+        List<CharacteristicDefinition> characteristics;
+        switch (stage)
+        {
+            case StarterStage.Stage1:
+                characteristics =  GameManager.instance.GetCharacteristicsForStage(stage);
+                SpawnSingleIngredient(characteristics[0]);
+                SpawnSingleIngredient(characteristics[0]);
+                break;
+            case StarterStage.Stage2:
+                characteristics = GameManager.instance.GetCharacteristicsForStage(stage);
+                SpawnSingleIngredient(characteristics[0]);
+                SpawnSingleIngredient(characteristics[1]);
+                break;
+            case StarterStage.Stage3:
+            default:
+                characteristics = GameManager.instance.GetCharacteristicsForStage(stage);
+                SpawnSingleIngredient(characteristics[0]);
+                SpawnSingleIngredient(characteristics[1]);
+                SpawnSingleIngredient(characteristics[2]);
+                break;
+        }
+        GameManager.instance.IncrementGameStarterStage();
+    }
+
     public void ClearAllObjects(){
         //Delete everything and start from beginning
         for(int i = 0; i < objectsSpawned.Count;i++){
@@ -83,4 +125,20 @@ public class ObjectSpawner : MonoBehaviour
         objectsSpawned.Remove(foundObject);
     }
 
+    /// <summary>
+    /// Changes the max amount, but includes a cap of how many are possible, due to the soawn positions being hardcoded
+    /// </summary>
+    public void ChangeMaxAmount(int newMaxAmount)
+    {
+        maxAmount = newMaxAmount <= GridSystem.instance.NumberOfSpawnPositions() - 5 ? newMaxAmount : GridSystem.instance.NumberOfSpawnPositions();
+    }
+
+}
+
+public enum StarterStage
+{
+    Stage1,
+    Stage2,
+    Stage3,
+    Other
 }

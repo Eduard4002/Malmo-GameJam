@@ -52,6 +52,10 @@ public class DrawManager : Singleton<DrawManager>
 		else if (Input.GetMouseButtonUp(0) || timer <= 0)
 		{
 			EndDraw();
+
+			var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			if (Vector2.Distance(startPos, mousePos) < .5f)
+				Encircle();
 		}
 	}
 
