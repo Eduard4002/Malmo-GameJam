@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 15607
+  controlID: 17235
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 15608
+  controlID: 17236
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -746,9 +746,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.9373941, y: -9.615318, z: -9.967953}
+    m_Target: {x: -2.5938928, y: -4.9087634, z: -9.980544}
     speed: 2
-    m_Value: {x: -2.9373941, y: -9.615318, z: -9.967953}
+    m_Value: {x: -2.5938928, y: -4.9087634, z: -9.980544}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -798,9 +798,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.919926
+    m_Target: 10.179117
     speed: 2
-    m_Value: 8.919926
+    m_Value: 10.179117
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1059,7 +1059,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Source
+    - Assets/Game/Resources/Sprites/Ingredients
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1069,16 +1069,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game/Source
+  - Assets/Game/Resources/Sprites/Ingredients
   m_LastFoldersGridSize: 64
   m_LastProjectPath: C:\Users\hjalt\Desktop\Malmo-GameJam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 145d0000
-    m_LastClickedID: 23828
-    m_ExpandedIDs: 00000000b85c0000ba5c0000bc5c0000
+    m_SelectedIDs: 8c730000
+    m_LastClickedID: 29580
+    m_ExpandedIDs: 00000000b85c0000ba5c0000bc5c00000e5d0000145d000088730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b85c0000bc5c0000
+    m_ExpandedIDs: 00000000b85c0000ba5c0000bc5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 0e6b000044970000d6980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class ObjectSelection : Singleton<ObjectSelection>
 {
-	[SerializeField, Tooltip("How long can the user select (seconds)")] float timerAmount = 10f;
-	private bool timerStarted;
-	private float timeLeft;
-
 	public EventReference successSound;
 	public EventReference failureSound;
 
@@ -44,6 +40,11 @@ public class ObjectSelection : Singleton<ObjectSelection>
             }
 
 		} else {
+			for (int i = 0; i < numberOfBubbles; i++)
+			{
+				UIManager.instance.UpdateScore(numberOfBubbles * 2);
+				ingredients[i].Fail();
+			}
 			AudioManager.Instance.PlayOneShot(failureSound);
             AudioManager.Instance.PlayOneShotDelayed(witchFailureSound, 1f);
             UIManager.instance.UpdateScore(-(numberOfBubbles * 2));

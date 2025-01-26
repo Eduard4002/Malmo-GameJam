@@ -26,17 +26,22 @@ public class Object : MonoBehaviour
     public int SpawnIndex;
 	public SpriteRenderer sr;
 
+    private Shakeable shake;
     private GameObject bubbbleOverlay;
     private bool isDeleted = false;
 
 	public void Awake()
     {
         Characteristics = GenerateCharacteristics();
+        
         bubbbleOverlay = transform.GetChild(0).gameObject;
         bubbbleOverlay.SetActive(false);
+
         sr = GetComponentInChildren<SpriteRenderer>();
 		sr.sprite = Characteristics.Sprite;
         sr.color = Color.clear;
+
+        shake = GetComponentInChildren<Shakeable>();
     }
 
 	private void Start()
@@ -65,6 +70,11 @@ public class Object : MonoBehaviour
         sr.sprite = Characteristics.Sprite;
         sr.color = Color.clear;
     }
+
+    public void Fail()
+    {
+        shake.InduceStress(1.2f);
+	}
 
 	public void DeleteSelf()
 	{
