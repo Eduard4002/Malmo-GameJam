@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public bool gameStarted;
 
-    public StarterStage currentStage;
+    public Stages currentStage;
 
     Sprite[] plainSpriteArray;
     Sprite[] zigzagSpriteArray;
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public List<CharacteristicDefinition> GetCharacteristicsForStage(StarterStage stage)
+    public List<CharacteristicDefinition> GetCharacteristicsForStage(Stages stage)
     {
         var initial = new List<CharacteristicDefinition>()
                 {
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
                 };
         switch (stage)
         {
-            case StarterStage.Stage2:
+            case Stages.Stage2:
                 return new List<CharacteristicDefinition>()
                 {
                     new CharacteristicDefinition()
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
                         Shape = Shape.Frog, Texture = Texture.Plain, Sprite = plainSpriteArray[0]
                     }
                 };
-            case StarterStage.Stage3:
+            case Stages.Stage3:
                 return new List<CharacteristicDefinition>()
                 {
                     new CharacteristicDefinition()
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
                         Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = stripedSpriteArray[4]
                     }
                 };
-            case StarterStage.Stage1:
+            case Stages.Stage1:
             default:
                 return initial;
         }
@@ -129,4 +129,22 @@ public class GameManager : MonoBehaviour
     {
         currentStage++;
     }
+
+    public void CheckScoreLevel()
+    {
+
+    }
+}
+
+public enum Stages
+{
+    Stage1,
+    Stage2,
+    Stage3, //last starter stage
+    Stage4,
+    Stage5,
+    Stage6,
+    Stage7,
+    Stage8,
+    Stage9
 }
