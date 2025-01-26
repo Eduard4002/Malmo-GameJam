@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e1856cfe-8c1b-4bc5-a1f2-6692b38db12a}">
+		<property name="assetPath">
+			<value>Crackling 1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.60081632653061223</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16d2ae7c-5bda-47da-9881-bb07cb2651cf}</destination>
+		</relationship>
+	</object>
+</objects>
