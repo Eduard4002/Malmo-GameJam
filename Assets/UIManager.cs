@@ -8,20 +8,23 @@ public class UIManager : Singleton<UIManager>
     public TMP_Text scoreText;
     private int score = 0;
 
-    void Update()
+    public static UIManager instance;
+
+    private void Awake() {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        if (Input.GetKey(KeyCode.P))
-        {
-            UpdateScore(5);
-        }
-        else if (Input.GetKey(KeyCode.M))
-        {
-            UpdateScore(-5);
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            HandeGamePauseAndResume();
-        }
+        
     }
 
     public void UpdateScore(int scoreChange)
@@ -33,11 +36,6 @@ public class UIManager : Singleton<UIManager>
     public void MainMenu()
     {
         SceneManager.LoadSceneAsync("MainMenu");
-    }
-
-    public void HandeGamePauseAndResume()
-    {
-        pausePanel.SetActive(!pausePanel.activeSelf);
     }
 
     public void RestartGame()

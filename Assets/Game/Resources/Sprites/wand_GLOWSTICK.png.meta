@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4b0cef8e54c6b774ca2a20ecfbc0bbd0
+guid: 95a2c58c8c81d4643b969cafaafbe62a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8979405933268748967
-    second: wand_0
+      213: 4592936085734047968
+    second: wand_GLOWSTICK_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,8 +49,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.038704187, y: 0.96336997}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wand_0
+      name: wand_GLOWSTICK_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 663
-        height: 731
+        width: 878
+        height: 936
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7aac4821f124d9c70800000000000000
-      internalID: 8979405933268748967
+      spriteID: 0e0404a19036dbf30800000000000000
+      internalID: 4592936085734047968
       vertices: []
       indices: 
       edges: []
@@ -139,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wand_0: 8979405933268748967
+      wand_GLOWSTICK_0: 4592936085734047968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

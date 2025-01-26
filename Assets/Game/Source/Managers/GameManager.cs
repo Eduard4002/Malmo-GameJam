@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static List<CharacteristicDefinition> Characteristics;
-    public Transform cursor;
+    //public Transform cursor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
 	{
-		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        cursor.position = mousePos;
-
-	}
+		//Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+  //      cursor.position = mousePos;
+  //      Cursor.visible = false;
+    }
 }
