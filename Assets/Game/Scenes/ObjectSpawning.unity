@@ -906,6 +906,17 @@ MonoBehaviour:
       Data3: 2084938120
       Data4: -208464901
     Path: event:/Ingame/Reactionary/Witch-sceptical
+--- !u!114 &995621166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7520470661575927154, guid: 732c9ecb0f9835b4d9172dcecd7a89a8, type: 3}
+  m_PrefabInstance: {fileID: 7135301903031221305}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc70c741416089c4cbfd0b7be7b7b5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &999808868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1440,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  scoreSystem: {fileID: 995621166}
 --- !u!4 &1508663641
 Transform:
   m_ObjectHideFlags: 0
