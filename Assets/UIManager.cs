@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
     public EventReference resumeGameSound;
     public EventReference buttonSound;
 
+    public Number scoreSystem;
+
     private void Awake() {
         if (instance == null)
         {
@@ -69,7 +71,9 @@ public class UIManager : MonoBehaviour
     public void UpdateScore(int scoreChange)
     {
         score += scoreChange;
-        scoreText.text = score.ToString();
+
+        int tempScore = int.Parse(score.ToString("D7"));
+        scoreSystem.UpdateNumber(tempScore);
     }
 
     public void RestartGame()
