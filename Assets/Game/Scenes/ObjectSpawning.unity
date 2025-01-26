@@ -877,7 +877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf735a52b24d47846b546daa4bf8a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerAmount: 5
   successSound:
     Guid:
       Data1: 747851334
@@ -1475,7 +1474,7 @@ MonoBehaviour:
       Data2: 1180105138
       Data3: 283404948
       Data4: 792666590
-    Path: event:/Ingame/bG music
+    Path: event:/Ingame/bG music/BG music
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0

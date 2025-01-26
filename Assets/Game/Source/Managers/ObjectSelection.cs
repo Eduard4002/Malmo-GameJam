@@ -46,7 +46,7 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			}
 			AudioManager.Instance.PlayOneShot(failureSound);
             AudioManager.Instance.PlayOneShotDelayed(witchFailureSound, 1f);
-            UIManager.instance.UpdateScore(-35);
+            UIManager.instance.UpdateScore(-50);
         }
 	}
 

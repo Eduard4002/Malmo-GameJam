@@ -80,8 +80,7 @@ public class UIManager : MonoBehaviour
         if (score < 0)
             score = 0; 
 
-        int tempScore = int.Parse(score.ToString("D7"));
-        scoreSystem.UpdateNumber(tempScore);
+        scoreSystem.UpdateNumber(score);
     }
 
     public int GetScore()
@@ -106,5 +105,4 @@ public class UIManager : MonoBehaviour
         Debug.Log("Game is exiting");
         Application.Quit();
     }
-    public int GetScore() => score;
 }
