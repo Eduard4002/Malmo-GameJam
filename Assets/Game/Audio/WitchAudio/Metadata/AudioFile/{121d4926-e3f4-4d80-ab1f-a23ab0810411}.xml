@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{121d4926-e3f4-4d80-ab1f-a23ab0810411}">
+		<property name="assetPath">
+			<value>Scribbling 1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1232653061224489</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16d2ae7c-5bda-47da-9881-bb07cb2651cf}</destination>
+		</relationship>
+	</object>
+</objects>
