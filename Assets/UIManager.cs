@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -31,6 +32,7 @@ public class UIManager : MonoBehaviour
 
     private void Update() {
         if(!startAnimation) return;
+
         backgroundObject.transform.position = Vector3.MoveTowards(backgroundObject.transform.position, moveTowards, speed * Time.deltaTime );
 
         if(backgroundObject.transform.position == moveTowards) startAnimation = false;
@@ -39,18 +41,14 @@ public class UIManager : MonoBehaviour
         if(backgroundObject.transform.position == downPosition){
             GameManager.instance.StartGame();
         }
-        
-
-        /* if(backgroundObject.transform.position == endPosition){
-            //Start the game
-            SceneManager.LoadSceneAsync("ObjectSpawning");
-        } */
     }
 
     public void StartAnimation(bool goingDown){
         startAnimation = true;
 
         moveTowards = goingDown == true ? downPosition : upPosition;
+
+        Cursor.instance.ToggleWand(goingDown);
     }
 
 

@@ -65,5 +65,6 @@ public class GameManager : MonoBehaviour
     public void StartGame(){
         gameStarted = true;
         ObjectSpawner.instance.SpawnNewIngredients(ObjectSpawner.instance.maxAmount);
+        Cursor.instance.ToggleWand(true);
     }
 }
