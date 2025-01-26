@@ -35,6 +35,7 @@ public class DrawManager : Singleton<DrawManager>
 
 	private void Update()
 	{
+		if(!GameManager.instance.gameStarted) return;
 		if (Input.GetMouseButtonDown(0))
 			StartDraw();
 

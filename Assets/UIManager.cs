@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using FMODUnity;
 using TMPro;
 using UnityEngine;
@@ -48,6 +49,11 @@ public class UIManager : MonoBehaviour
         if(backgroundObject.transform.position == downPosition){
             GameManager.instance.StartGame();
         }
+        if(backgroundObject.transform.position == upPosition){
+            GameManager.instance.StopGame();
+            SceneManager.LoadSceneAsync("ObjectSpawning");
+
+        }
     }
 
     public void StartAnimation(bool goingDown){
@@ -78,6 +84,11 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
+        /* Debug.Log("Called restart game");
+        GameManager.instance.StopGame();
+        Debug.Log("Stopped game");
+        GameManager.instance.StartGame();
+        Debug.Log("started game"); */
         AudioManager.Instance.PlayOneShot(resumeGameSound);
         SceneManager.LoadSceneAsync("ObjectSpawning");
     }
@@ -88,4 +99,5 @@ public class UIManager : MonoBehaviour
         Debug.Log("Game is exiting");
         Application.Quit();
     }
+    public int GetScore() => score;
 }
