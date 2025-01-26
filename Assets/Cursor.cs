@@ -3,6 +3,7 @@ using UnityEngine;
 public class Cursor : MonoBehaviour
 {
     public static Cursor instance;
+    public WandPillow wandPillow;
 
     private void Awake() {
         if (instance == null)
@@ -34,6 +35,9 @@ public class Cursor : MonoBehaviour
     public void ToggleWand(bool toggle){
         transform.GetChild(0).gameObject.SetActive(toggle);
         UnityEngine.Cursor.visible = toggle ? false : true;
+
+        if (wandPillow)
+            wandPillow.ToggleWand(!toggle);
     }
 }
 

@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 907991615058101438}
   - component: {fileID: 1859865692792594019}
   - component: {fileID: 2171286134056740338}
+  - component: {fileID: 3488061221142261576}
   m_Layer: 0
   m_Name: StartGame
   m_TagString: Untagged
@@ -313,6 +314,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 12.91, y: 3.77}
   m_EdgeRadius: 0
+--- !u!114 &3488061221142261576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091888632253758720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba2b6d855e74f64f8b9455e1192fc4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wand: {fileID: 8942005539971014111, guid: 8b7ba675bee6c4e4b8d54617a3030eea, type: 3}
+  noWand: {fileID: -8560710465902503438, guid: 5b715308547b5b84cba4e7839fc39f00, type: 3}
 --- !u!1 &1496954032465773605
 GameObject:
   m_ObjectHideFlags: 0
