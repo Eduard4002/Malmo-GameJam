@@ -55,6 +55,15 @@ public class Object : MonoBehaviour
         if (isDeleted)
             DeleteAnimation();
 	}
+    private void FixedUpdate() {
+        if(isDeleted) return;
+        int randX = Random.Range(-1, 2);
+        int randY = Random.Range(-1, 2);
+        Vector3 spawnPosition = GridSystem.instance.spawnPositions[SpawnIndex].position;
+        Vector3 moveTowards = new Vector3(spawnPosition.x + randX, spawnPosition.y + randY, -2);
+
+        transform.position = Vector3.MoveTowards(transform.position, moveTowards, 0.5f * Time.fixedDeltaTime);
+    }
 
 	public CharacteristicDefinition GenerateCharacteristics()
     {
