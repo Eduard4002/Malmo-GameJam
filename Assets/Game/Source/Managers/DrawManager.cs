@@ -1,6 +1,3 @@
-using FMODUnity;
-using NUnit.Framework;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -57,6 +54,11 @@ public class DrawManager : Singleton<DrawManager>
 			if (Vector2.Distance(startPos, mousePos) < .5f)
 				Encircle();
 		}
+	}
+
+	public void SetDrawTime(float t)
+	{
+		drawTime = t;
 	}
 
 	void AddPoint(Vector2 pointPos)
@@ -172,29 +174,5 @@ public class DrawManager : Singleton<DrawManager>
 			}
 		}
 		return overlapped;
-	}
-
-	private void OnDrawGizmos()
-	{
-		if (!Application.isPlaying || brush.positionCount < 2)
-			return;
-
-		Gizmos.DrawCube(startPos, Vector2.one * .5f);
-		
-		//endline
-		var endA = brush.GetPosition(brush.positionCount - 2);
-		var endB = brush.GetPosition(brush.positionCount - 1);
-		var intersection = Vector2.zero;
-
-		for (int i = 0; i < brush.positionCount-3; i++)
-		{
-			var a = brush.GetPosition(i+0);
-			var b = brush.GetPosition(i+1);
-
-			if (Helpers.LineIntersection(endA, endB, a, b, ref intersection))
-				print("CROSSED");
-
-			Gizmos.DrawLine(a, b);
-		}
 	}
 }

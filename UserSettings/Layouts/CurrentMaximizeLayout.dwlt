@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 17461
+  controlID: 22396
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17462
+  controlID: 22397
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -746,9 +746,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.5938928, y: -4.9087634, z: -9.980544}
+    m_Target: {x: -2.0882869, y: -0.2835861, z: -9.915262}
     speed: 2
-    m_Value: {x: -2.5938928, y: -4.9087634, z: -9.980544}
+    m_Value: {x: -2.0882869, y: -0.2835861, z: -9.915262}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -798,9 +798,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.179117
+    m_Target: 3.6510456
     speed: 2
-    m_Value: 10.179117
+    m_Value: 3.6510456
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -922,9 +922,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: e8140000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6a35ffff3a36ffff3e36ffff2cceffff9cd4ffff64d5ffff0cf3ffff4cf3ffffccf7ffff2afbffff84680000f66800007e7800009678000054c100008ec10000
+      m_ExpandedIDs: b8adfeffeaaffeff50b1feff52b1feffc0b1fefffab1feff28b2feff6ab3feff9cb3feffceb3feff00b4feff6a35ffff3a36ffff3e36ffff2cceffff9cd4ffff64d5ffff0cf3ffff4cf3ffffccf7ffff2afbffff84680000f66800007e7800009678000054c100008ec10000b021010040230100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/Resources/Sprites/Ingredients
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1032,16 +1032,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game/Resources/Sprites/Ingredients
+  - Assets
   m_LastFoldersGridSize: 64
   m_LastProjectPath: C:\Users\hjalt\Desktop\Malmo-GameJam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c730000
-    m_LastClickedID: 29580
-    m_ExpandedIDs: 00000000b85c0000ba5c0000bc5c00000e5d000088730000
+    m_SelectedIDs: b85c0000
+    m_LastClickedID: 23736
+    m_ExpandedIDs: 00000000b85c0000ba5c0000bc5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1096,10 +1096,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 0e6b000044970000d6980000
+    m_SelectedInstanceIDs: e8140000
+    m_LastClickedInstanceID: 5352
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 0e6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1147,8 +1147,8 @@ MonoBehaviour:
     y: 0
     width: 468
     height: 941
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}

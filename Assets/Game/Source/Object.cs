@@ -47,6 +47,7 @@ public class Object : MonoBehaviour
 	private void Start()
 	{
         transform.name = $"{Characteristics.Shape} - {Characteristics.Texture}";
+        NewMoveTowardsPoint();
     }
 
 	private void Update()
@@ -55,15 +56,27 @@ public class Object : MonoBehaviour
         if (isDeleted)
             DeleteAnimation();
 	}
-    private void FixedUpdate() {
-        if(isDeleted) return;
-        int randX = Random.Range(-1, 2);
-        int randY = Random.Range(-1, 2);
-        Vector3 spawnPosition = GridSystem.instance.spawnPositions[SpawnIndex].position;
-        Vector3 moveTowards = new Vector3(spawnPosition.x + randX, spawnPosition.y + randY, -2);
 
-        transform.position = Vector3.MoveTowards(transform.position, moveTowards, 0.5f * Time.fixedDeltaTime);
-    }
+    Vector2 moveTowards;
+	private void FixedUpdate() {
+        if(isDeleted) return;
+        
+        transform.position = Vector3.MoveTowards(transform.position, moveTowards, 0.15f * Time.fixedDeltaTime);
+        Debug.DrawRay(moveTowards, Vector2.up);
+
+		if (Vector2.Distance(transform.position, moveTowards) < 0.2f)
+        {
+            NewMoveTowardsPoint();
+        }
+	}
+    private void NewMoveTowardsPoint()
+    {
+		float range = .6f;
+		float randX = Random.Range(-range, range);
+		float randY = Random.Range(-range, range);
+		Vector2 spawnPosition = GridSystem.instance.spawnPositions[SpawnIndex].position;
+		moveTowards = new Vector2(spawnPosition.x + randX, spawnPosition.y + randY);
+	}
 
 	public CharacteristicDefinition GenerateCharacteristics()
     {
