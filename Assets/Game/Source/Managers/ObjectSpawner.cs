@@ -15,7 +15,7 @@ public class ObjectSpawner : MonoBehaviour
 
     public List<Object> objectsSpawned = new List<Object>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
@@ -25,21 +25,18 @@ public class ObjectSpawner : MonoBehaviour
         {
             Destroy(this);
         }
-
-        Debug.Log($"Spawning initial ingredients");
-        SpawnNewIngredients(maxAmount);
     }
 
     public void SpawnNewIngredients(int numberOfIngredients)
     {
-        int slotsFree = maxAmount - GridSystem.Instance.NumberOfSlotsTaken();
+        int slotsFree = maxAmount - GridSystem.instance.NumberOfSlotsTaken();
         int numberToSpawn = numberOfIngredients <= slotsFree ? numberOfIngredients : slotsFree;
 
         Debug.Log($"Spawning {numberOfIngredients} new ingredients");
         for(int i = 0; i < numberToSpawn; i++)
         {
             Debug.Log($"Spawning ingredient {i}");
-            (int index, Vector2 pos) = GridSystem.Instance.FindEmptySlot();
+            (int index, Vector2 pos) = GridSystem.instance.FindEmptySlot();
 
             GameObject ingredient = Instantiate(objectPrefab, new Vector3(pos.x, pos.y, -2), Quaternion.identity);
             ingredient.GetComponent<Object>().SpawnIndex = index;
@@ -51,7 +48,7 @@ public class ObjectSpawner : MonoBehaviour
             Debug.Log("No valid moves, spawning new ingredients");
             //Delete everything and start from beginning
             for(int i = 0; i < objectsSpawned.Count;i++){
-                GridSystem.Instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
+                GridSystem.instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
                 Destroy(objectsSpawned[i].gameObject);
                 objectsSpawned.Clear();
             }

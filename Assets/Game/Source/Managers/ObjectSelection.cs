@@ -19,14 +19,14 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			//Destroy the items only if we succeded
 			for (int i = 0; i < numberOfBubbles; i++)
 			{
-				GridSystem.Instance.RemoveSlot(ingredients[i].SpawnIndex);
+				GridSystem.instance.RemoveSlot(ingredients[i].SpawnIndex);
 				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
-				UIManager.Instance.UpdateScore(numberOfBubbles * 2);
+				UIManager.instance.UpdateScore(numberOfBubbles * 2);
 				ingredients[i].DeleteSelf();
 			}
 			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
 		}else{
-            UIManager.Instance.UpdateScore(-(numberOfBubbles * 2));
+            UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
 
         }
 	}

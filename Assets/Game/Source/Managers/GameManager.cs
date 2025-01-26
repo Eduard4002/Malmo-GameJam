@@ -8,6 +8,21 @@ public class GameManager : MonoBehaviour
     public static List<CharacteristicDefinition> Characteristics;
     //public Transform cursor;
 
+    public static GameManager instance;
+
+    public bool gameStarted;
+
+    private void Awake() {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,5 +60,10 @@ public class GameManager : MonoBehaviour
 		//Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
   //      cursor.position = mousePos;
   //      Cursor.visible = false;
+    }
+
+    public void StartGame(){
+        gameStarted = true;
+        ObjectSpawner.instance.SpawnNewIngredients(ObjectSpawner.instance.maxAmount);
     }
 }
