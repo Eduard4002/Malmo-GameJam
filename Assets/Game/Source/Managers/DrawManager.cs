@@ -151,7 +151,7 @@ public class DrawManager : Singleton<DrawManager>
 	private void UpdateVisual()
 	{
 		// go towards red until last 3rd of time
-		float t = (5f-timer) / (drawTime-drawTime/3); // sorry i got tired
+		float t = (drawTime-timer) / (drawTime-drawTime/3); // sorry i got tired
 		brushMat.color = Color.Lerp(startColor, endColor, t);
 
 		// blink on last 3rd of time
