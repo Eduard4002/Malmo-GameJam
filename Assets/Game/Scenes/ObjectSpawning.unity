@@ -837,7 +837,13 @@ MonoBehaviour:
       Data3: -1655248747
       Data4: -1801387073
     Path: event:/Ingame/Ambience/Ambience scribbling
-  MaxAmbientTime: 30
+  - Guid:
+      Data1: -1646459097
+      Data2: 1108981367
+      Data3: 1572876956
+      Data4: -1563624497
+    Path: event:/Ingame/Ambience/Crackling
+  MaxAmbientTime: 10
   MinAmbientTime: 5
 --- !u!1 &1027260598
 GameObject:
