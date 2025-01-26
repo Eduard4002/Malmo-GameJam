@@ -61,15 +61,18 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			return false;
 
 		//Check if the user has picked the correct or wrong ingredients
-		Object check = items[0];
 		for (int i = 0; i < items.Count; i++)
 		{
-			var item = items[i];
-			var sameShape = item.Characteristics.Shape == check.Characteristics.Shape;
-			var sameTexture = item.Characteristics.Texture == check.Characteristics.Texture;
+			for (int j = 0; j < items.Count; j++)
+			{
+				var item = items[i];
+				var check = items[j];
+				var sameShape = item.Characteristics.Shape == check.Characteristics.Shape;
+				var sameTexture = item.Characteristics.Texture == check.Characteristics.Texture;
 
-			if (!sameShape && !sameTexture)
-				return false;
+				if (!sameShape && !sameTexture)
+					return false;
+			}
 		}
 		return true;
 	}
