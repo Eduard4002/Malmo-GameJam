@@ -2,15 +2,19 @@ using UnityEngine;
 public enum Shape
 {
     Frog,
+    Fish,
+    Mushroom,
+    Chickenfeet,
     Eye,
-    Chickenfeet
+    Skull,
 }
 
 public enum Texture
 {
     Plain,
     Spots,
-    Stripes
+    Stripes,
+    ZigZag
 }
 
 public struct CharacteristicDefinition
