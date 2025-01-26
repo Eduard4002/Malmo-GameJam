@@ -8,7 +8,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{53781878-860b-41af-986d-e3f60af7882d}</destination>
+			<destination>{ac94a857-d49e-4857-8e22-191804f5f745}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5bed97ff-7d27-439f-8d04-8aff68ec99ab}</destination>
@@ -62,6 +62,9 @@
 		<relationship name="modules">
 			<destination>{ce7d7e01-43a7-408a-aa98-b4c7e73aa63e}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{07adc59a-1c73-411a-8995-f804a6acf610}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c05a72c1-64f7-4b78-8bac-287757943f75}">
 		<property name="volume">
@@ -81,6 +84,9 @@
 		<property name="length">
 			<value>21.127739583333334</value>
 		</property>
+		<property name="volume">
+			<value>-6.5</value>
+		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{84cf6cc4-3b93-4851-b001-9cc4770f3551}</destination>
 		</relationship>
@@ -94,6 +100,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{50bc1647-0e63-42d7-ac35-bc6cb17947a1}" />
+	<object class="LoopRegion" id="{07adc59a-1c73-411a-8995-f804a6acf610}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>21.127739583333334</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{1eac4bd1-2aea-40aa-a1ba-237705ce881e}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{f85d6d34-095f-42bf-aaf8-02e1245ca961}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{626c3f5b-173e-48c3-8671-6ef6470d8b6d}">
 		<relationship name="effects">
 			<destination>{571830e2-acb2-4a72-abaf-97d7cb93b1f9}</destination>
