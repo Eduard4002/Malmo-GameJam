@@ -40,12 +40,7 @@ public class ObjectSpawner : MonoBehaviour
         bool validMoves = HasValidMoves();
         if(!validMoves){
             Debug.Log("No valid moves, spawning new ingredients");
-            //Delete everything and start from beginning
-            for(int i = 0; i < objectsSpawned.Count;i++){
-                GridSystem.instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
-                Destroy(objectsSpawned[i].gameObject);
-                objectsSpawned.Clear();
-            }
+            ClearAllObjects();
             SpawnNewIngredients();
 
         }
@@ -99,6 +94,14 @@ public class ObjectSpawner : MonoBehaviour
         GameManager.instance.IncrementGameStarterStage();
     }
 
+    public void ClearAllObjects(){
+        //Delete everything and start from beginning
+        for(int i = 0; i < objectsSpawned.Count;i++){
+            GridSystem.instance.RemoveSlot(objectsSpawned[i].SpawnIndex);
+            Destroy(objectsSpawned[i].gameObject);
+            objectsSpawned.Clear();
+        }
+    }
     public bool HasValidMoves(){
         // Check all pairs of objects to see if at least one match exists
         for (int i = 0; i < objectsSpawned.Count; i++) {

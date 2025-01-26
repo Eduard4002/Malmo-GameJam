@@ -71,8 +71,13 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(){
         gameStarted = true;
+        UIManager.instance.UpdateScore(-UIManager.instance.GetScore());
         ObjectSpawner.instance.SpawnStarterIngredients(currentStage);
         Cursor.instance.ToggleWand(true);
+    }
+    public void StopGame(){
+        gameStarted = false;
+        ObjectSpawner.instance.ClearAllObjects();
     }
 
     public void ChangeCharacteristicsPool()
