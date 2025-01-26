@@ -46,10 +46,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ad1b2b6e976874da64e3b66edb5591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drawSFX:
+    Guid:
+      Data1: -1372371318
+      Data2: 1093665841
+      Data3: 666099097
+      Data4: -1636841780
+    Path: event:/Ingame/bubbles/Creating bubble
   startColor: {r: 1, g: 0.6909754, b: 0, a: 1}
   endColor: {r: 1, g: 0, b: 0, a: 1}
   flashColor: {r: 1, g: 0.8915094, b: 0.9392982, a: 1}
-  drawTime: 5
 --- !u!1 &5849193381576578971
 GameObject:
   m_ObjectHideFlags: 0

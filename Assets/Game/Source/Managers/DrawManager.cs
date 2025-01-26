@@ -1,9 +1,16 @@
+using FMOD.Studio;
+using FMODUnity;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 
 public class DrawManager : Singleton<DrawManager>
 {
+	[SerializeField]
+	private EventReference drawSFX;
+	private EventInstance drawSFXInstance;
+
 	[SerializeField] private Color startColor;
 	[SerializeField] private Color endColor;
 	[SerializeField] private Color flashColor;
@@ -27,6 +34,11 @@ public class DrawManager : Singleton<DrawManager>
 		brush = GetComponentInChildren<LineRenderer>();
 		poly = GetComponentInChildren<PolygonCollider2D>();
 		brushMat = brush.material;
+	}
+
+	private void Start()
+	{
+		drawSFXInstance = AudioManager.Instance.CreateInstance(drawSFX);
 	}
 
 	private void Update()
@@ -88,6 +100,8 @@ public class DrawManager : Singleton<DrawManager>
 
 	void StartDraw()
 	{
+		drawSFXInstance.start();
+
 		var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		startPos = mousePos;
 
@@ -102,6 +116,7 @@ public class DrawManager : Singleton<DrawManager>
 
 	void EndDraw()
 	{
+		drawSFXInstance.stop(STOP_MODE.IMMEDIATE);
 		brush.positionCount = 0;
 		isDrawing = false;
 	}
@@ -150,6 +165,10 @@ public class DrawManager : Singleton<DrawManager>
 
 	private void UpdateVisual()
 	{
+		// audio
+		float p = timer / drawTime;
+		drawSFXInstance.setParameterByName("pitch", p);
+
 		// go towards red until last 3rd of time
 		float t = (drawTime-timer) / (drawTime-drawTime/3); // sorry i got tired
 		brushMat.color = Color.Lerp(startColor, endColor, t);
