@@ -153,13 +153,13 @@ public class DrawManager : Singleton<DrawManager>
 	{
 		// go towards red until last 3rd of time
 		float t = (5f-timer) / (drawTime-drawTime/3); // sorry i got tired
-		brushMat.color = Color.Lerp(Color.blue, Color.red, t);
+		brushMat.color = Color.Lerp(startColor, endColor, t);
 
 		// blink on last 3rd of time
 		if (t > 1f) 
 		{
 			// blink
-			brushMat.color = Color.Lerp(Color.red, Color.white, t*t*t*3 % 1f); //it works, so shut up
+			brushMat.color = Color.Lerp(endColor, flashColor, t*t*t*3 % 1f); //it works, so shut up
 		}
 	}
 
