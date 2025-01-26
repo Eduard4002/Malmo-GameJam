@@ -1,10 +1,8 @@
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
-using static UnityEngine.GraphicsBuffer;
 
-public class Music : MonoBehaviour
+public class Music : Singleton<Music>
 {
 	[SerializeField]
 	private EventReference music;
@@ -25,5 +23,10 @@ public class Music : MonoBehaviour
 	{
 		cur = Mathf.Lerp(cur, target, Time.deltaTime);
 		musicInstance.setParameterByName("switch", cur);
+	}
+
+	public void SetTarget(float newTarget)
+	{
+		target = newTarget;
 	}
 }

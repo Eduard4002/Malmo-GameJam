@@ -1,8 +1,6 @@
-using System.Runtime.InteropServices.WindowsRuntime;
 using FMODUnity;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -38,7 +36,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private void Update() {
+	private void Start()
+	{
+        Music.Instance.SetTarget(0);
+	}
+
+	private void Update() {
         if(!startAnimation) return;
 
         backgroundObject.transform.position = Vector3.MoveTowards(backgroundObject.transform.position, moveTowards, speed * Time.deltaTime );
@@ -59,12 +62,14 @@ public class UIManager : MonoBehaviour
     public void StartAnimation(bool goingDown){
 
         if (goingDown)
-        {
-            AudioManager.Instance.PlayOneShot(startGameSound);
+		{
+			Music.Instance.SetTarget(1);
+			AudioManager.Instance.PlayOneShot(startGameSound);
         }
         else
-        {
-            AudioManager.Instance.PlayOneShot(buttonSound);
+		{
+			Music.Instance.SetTarget(0);
+			AudioManager.Instance.PlayOneShot(buttonSound);
         }
         startAnimation = true;
 
