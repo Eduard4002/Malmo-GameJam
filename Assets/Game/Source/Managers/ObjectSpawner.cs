@@ -11,7 +11,7 @@ public class ObjectSpawner : MonoBehaviour
     public static ObjectSpawner instance;
 
 
-    public int maxAmount = 9;
+    public int maxAmount = 5;
 
     public List<Object> objectsSpawned = new List<Object>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -68,22 +68,22 @@ public class ObjectSpawner : MonoBehaviour
         objectsSpawned.Add(ingredient.GetComponent<Object>());
     }
 
-    public void SpawnStarterIngredients(StarterStage stage)
+    public void SpawnStarterIngredients(Stages stage)
     {
         List<CharacteristicDefinition> characteristics;
         switch (stage)
         {
-            case StarterStage.Stage1:
+            case Stages.Stage1:
                 characteristics =  GameManager.instance.GetCharacteristicsForStage(stage);
                 SpawnSingleIngredient(characteristics[0]);
                 SpawnSingleIngredient(characteristics[0]);
                 break;
-            case StarterStage.Stage2:
+            case Stages.Stage2:
                 characteristics = GameManager.instance.GetCharacteristicsForStage(stage);
                 SpawnSingleIngredient(characteristics[0]);
                 SpawnSingleIngredient(characteristics[1]);
                 break;
-            case StarterStage.Stage3:
+            case Stages.Stage3:
             default:
                 characteristics = GameManager.instance.GetCharacteristicsForStage(stage);
                 SpawnSingleIngredient(characteristics[0]);
@@ -133,12 +133,4 @@ public class ObjectSpawner : MonoBehaviour
         maxAmount = newMaxAmount <= GridSystem.instance.NumberOfSpawnPositions() - 5 ? newMaxAmount : GridSystem.instance.NumberOfSpawnPositions();
     }
 
-}
-
-public enum StarterStage
-{
-    Stage1,
-    Stage2,
-    Stage3,
-    Other
 }

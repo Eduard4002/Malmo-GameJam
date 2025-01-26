@@ -84,6 +84,11 @@ public class UIManager : MonoBehaviour
         scoreSystem.UpdateNumber(tempScore);
     }
 
+    public int GetScore()
+    {
+        return score;
+    }
+
     public void RestartGame()
     {
         /* Debug.Log("Called restart game");
