@@ -26,11 +26,11 @@ public class ObjectSelection : Singleton<ObjectSelection>
 			{
 				GridSystem.instance.RemoveSlot(ingredients[i].SpawnIndex);
 				ObjectSpawner.instance.RemoveObjectSpawned(ingredients[i].SpawnIndex);
-				UIManager.instance.UpdateScore(numberOfBubbles * 2);
+				UIManager.instance.UpdateScore(Mathf.CeilToInt(Mathf.Pow(numberOfBubbles, 1.75f) * 10));
 				ingredients[i].DeleteSelf();
 			}
 
-			if(GameManager.instance.currentStage == StarterStage.Other)
+			if((int)GameManager.instance.currentStage >= 3)
 			{
                 ObjectSpawner.instance.SpawnNewIngredients();
             }
@@ -42,12 +42,11 @@ public class ObjectSelection : Singleton<ObjectSelection>
 		} else {
 			for (int i = 0; i < numberOfBubbles; i++)
 			{
-				UIManager.instance.UpdateScore(numberOfBubbles * 2);
 				ingredients[i].Fail();
 			}
 			AudioManager.Instance.PlayOneShot(failureSound);
             AudioManager.Instance.PlayOneShotDelayed(witchFailureSound, 1f);
-            UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
+            UIManager.instance.UpdateScore(-50);
         }
 	}
 

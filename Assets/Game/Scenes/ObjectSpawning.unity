@@ -877,7 +877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf735a52b24d47846b546daa4bf8a979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerAmount: 5
   successSound:
     Guid:
       Data1: 747851334
@@ -1428,18 +1427,18 @@ MonoBehaviour:
     Path: event:/Menu and UI/Start game
   resumeGameSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1355409428
+      Data2: 1236025327
+      Data3: 736870315
+      Data4: -1730026445
+    Path: event:/Menu and UI/resume game
   buttonSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1060253121
+      Data2: 1217288940
+      Data3: -612885842
+      Data4: -2115394258
+    Path: event:/Menu and UI/Select button
   scoreSystem: {fileID: 995621166}
 --- !u!4 &1508663641
 Transform:
@@ -1475,7 +1474,7 @@ MonoBehaviour:
       Data2: 1180105138
       Data3: 283404948
       Data4: 792666590
-    Path: event:/Ingame/bG music
+    Path: event:/Ingame/bG music/BG music
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0
@@ -1640,6 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStarted: 0
+  currentStage: 0
 --- !u!1 &2143931173
 GameObject:
   m_ObjectHideFlags: 0
