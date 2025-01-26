@@ -837,7 +837,13 @@ MonoBehaviour:
       Data3: -1655248747
       Data4: -1801387073
     Path: event:/Ingame/Ambience/Ambience scribbling
-  MaxAmbientTime: 30
+  - Guid:
+      Data1: -1646459097
+      Data2: 1108981367
+      Data3: 1572876956
+      Data4: -1563624497
+    Path: event:/Ingame/Ambience/Crackling
+  MaxAmbientTime: 10
   MinAmbientTime: 5
 --- !u!1 &1027260598
 GameObject:
@@ -1363,7 +1369,7 @@ MonoBehaviour:
       Data2: 1261270626
       Data3: -2048530281
       Data4: -260806396
-    Path: event:/Ingame/Ambience/Ambience fire
+    Path: event:/Ingame/bG music/Ambience fire
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0
@@ -1486,26 +1492,6 @@ PrefabInstance:
     - target: {fileID: 2361639840223741833, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442640651148286830, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
-      propertyPath: music.Path
-      value: event:/Menu and UI/Menu music
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442640651148286830, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
-      propertyPath: music.Guid.Data1
-      value: -603861302
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442640651148286830, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
-      propertyPath: music.Guid.Data2
-      value: 1319554297
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442640651148286830, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
-      propertyPath: music.Guid.Data3
-      value: 531753352
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442640651148286830, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
-      propertyPath: music.Guid.Data4
-      value: 1524528794
       objectReference: {fileID: 0}
     - target: {fileID: 6928030119802881644, guid: d86624e1d40a14843beb06f4bdfb6ddc, type: 3}
       propertyPath: m_Name

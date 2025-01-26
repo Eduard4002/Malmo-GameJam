@@ -108,7 +108,7 @@ public class Object : MonoBehaviour
         t = Random.Range(0.0f, 0.7f);
         riseSpeed += Random.Range(-0.15f, 0.35f);
         bubbbleOverlay.SetActive(true);
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 30f);
         sr.sortingOrder = 1000;
 	}
 
