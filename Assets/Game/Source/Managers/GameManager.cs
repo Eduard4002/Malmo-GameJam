@@ -222,8 +222,8 @@ public class GameManager : MonoBehaviour
     {
         var characteristic = new CharacteristicDefinition()
         {
-            Shape = Shape.Frog,
-            Texture = Texture.Stripes,
+            Shape = shape,
+            Texture = texture,
             Sprite = stripedSpriteArray[0]
         };
 
