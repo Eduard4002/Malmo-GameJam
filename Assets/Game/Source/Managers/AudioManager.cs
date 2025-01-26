@@ -18,17 +18,17 @@ public class AudioManager : Singleton<AudioManager>
 	{
 		base.Awake();
 		masterBus	= RuntimeManager.GetBus("bus:/");
-		sfxBus		= RuntimeManager.GetBus("bus:/SFX");
-		ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
-		musicBus	= RuntimeManager.GetBus("bus:/Music");
+		//sfxBus		= RuntimeManager.GetBus("bus:/SFX");
+		//ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
+		//musicBus	= RuntimeManager.GetBus("bus:/Music");
 	}
 
 	private void Update()
 	{
-		sfxBus.setVolume(SFXVolume);
-		musicBus.setVolume(MusicVolume);
+		//sfxBus.setVolume(SFXVolume);
+		//musicBus.setVolume(MusicVolume);
 		masterBus.setVolume(MasterVolume);
-		ambienceBus.setVolume(AmbienceVolume);
+		//ambienceBus.setVolume(AmbienceVolume);
 	}
 
 	public void PlayOneShot(EventReference sfx) => RuntimeManager.PlayOneShot(sfx);
