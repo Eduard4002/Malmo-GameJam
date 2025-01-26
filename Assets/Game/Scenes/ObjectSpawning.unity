@@ -826,18 +826,6 @@ MonoBehaviour:
       Data4: -822810
     Path: event:/Ingame/Ambience/Ambience cauldron
   - Guid:
-      Data1: 2046139584
-      Data2: 1238273815
-      Data3: -771937377
-      Data4: -2115181800
-    Path: event:/Ingame/Ambience/Ambience cauldron 2
-  - Guid:
-      Data1: 259304424
-      Data2: 1261270626
-      Data3: -2048530281
-      Data4: -260806396
-    Path: event:/Ingame/Ambience/Ambience fire
-  - Guid:
       Data1: -1641701125
       Data2: 1252955989
       Data3: 1879635332
@@ -1263,6 +1251,8 @@ GameObject:
   - component: {fileID: 1508663641}
   - component: {fileID: 1508663640}
   - component: {fileID: 1508663642}
+  - component: {fileID: 1508663643}
+  - component: {fileID: 1508663644}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1344,6 +1334,68 @@ MonoBehaviour:
       Data3: 283404948
       Data4: 792666590
     Path: event:/Ingame/bG music/BG music
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1508663643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508663639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2046139584
+      Data2: 1238273815
+      Data3: -771937377
+      Data4: -2115181800
+    Path: event:/Ingame/bG music/Ambience cauldron 2
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1508663644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508663639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 259304424
+      Data2: 1261270626
+      Data3: -2048530281
+      Data4: -260806396
+    Path: event:/Ingame/bG music/Ambience fire
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0
