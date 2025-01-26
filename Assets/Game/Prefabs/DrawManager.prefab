@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ad1b2b6e976874da64e3b66edb5591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 0, g: 0.31705594, b: 1, a: 1}
+  startColor: {r: 1, g: 0.6909754, b: 0, a: 1}
   endColor: {r: 1, g: 0, b: 0, a: 1}
   flashColor: {r: 1, g: 0.8915094, b: 0.9392982, a: 1}
   drawTime: 5

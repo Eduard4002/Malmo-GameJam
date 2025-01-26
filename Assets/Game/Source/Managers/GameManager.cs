@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
             GetSpriteForCharacteristic(Shape.Fish, Texture.ZigZag),
         };
 
-        stage6Definitions = new List<CharacteristicDefinition>()
+        stage9Definitions = new List<CharacteristicDefinition>()
         {
             GetSpriteForCharacteristic(Shape.Mushroom, Texture.Plain),
             GetSpriteForCharacteristic(Shape.Mushroom, Texture.Stripes),
