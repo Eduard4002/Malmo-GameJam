@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      skull_QUIT_NOGLOW_0: 1486914951452866426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
