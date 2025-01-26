@@ -180,7 +180,8 @@ public class GameManager : MonoBehaviour
 
                 if ((int)currentStage >= (int)Stages.Stage9)
                     break;
-                currentStage = Stages.Stage9;
+				DrawManager.Instance.SetDrawTime(2);
+				currentStage = Stages.Stage9;
                 Characteristics.AddRange(stage9Definitions);
                 ObjectSpawner.instance.ChangeMaxAmount(15);
                 break;
@@ -188,7 +189,8 @@ public class GameManager : MonoBehaviour
 
                 if ((int)currentStage >= (int)Stages.Stage8)
                     break;
-                currentStage = Stages.Stage8;
+				DrawManager.Instance.SetDrawTime(3);
+				currentStage = Stages.Stage8;
                 Characteristics.AddRange(stage8Definitions);
                 ObjectSpawner.instance.ChangeMaxAmount(13);
                 break;
@@ -196,7 +198,9 @@ public class GameManager : MonoBehaviour
 
                 if ((int)currentStage >= (int)Stages.Stage7)
                     break;
-                currentStage = Stages.Stage7;
+
+				DrawManager.Instance.SetDrawTime(4);
+				currentStage = Stages.Stage7;
                 Characteristics.AddRange(stage7Definitions);
                 ObjectSpawner.instance.ChangeMaxAmount(11);
                 break;
@@ -204,13 +208,15 @@ public class GameManager : MonoBehaviour
 
                 if ((int)currentStage >= (int)Stages.Stage6)
                     break;
-                currentStage = Stages.Stage6;
+				DrawManager.Instance.SetDrawTime(6);
+				currentStage = Stages.Stage6;
                 Characteristics.AddRange(stage6Definitions);
                 ObjectSpawner.instance.ChangeMaxAmount(9);
                 break;
             case > 2000:
                 if ((int)currentStage >= (int)Stages.Stage5)
                     break;
+                DrawManager.Instance.SetDrawTime(8);
                 currentStage = Stages.Stage5;
                 Characteristics.AddRange(stage5Definitions);
                 ObjectSpawner.instance.ChangeMaxAmount(7);
