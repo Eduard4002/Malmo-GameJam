@@ -8,7 +8,7 @@
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{729313e1-8509-4af5-82f2-5cc27c49dcb4}</destination>
+			<destination>{ac94a857-d49e-4857-8e22-191804f5f745}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{d708911d-e3cb-4897-8bb7-605430698544}</destination>
@@ -27,9 +27,6 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{fd90cbc2-a922-4235-a516-182e820bef05}</destination>
-		</relationship>
-		<relationship name="banks">
-			<destination>{6ef47b97-262c-4190-8bfc-0457f76bfbeb}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{d708911d-e3cb-4897-8bb7-605430698544}">
@@ -78,8 +75,14 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{fad52fe3-bcb9-4be7-bd7c-d10dddff0124}">
+		<property name="isAsync">
+			<value>true</value>
+		</property>
 		<property name="length">
 			<value>52.42775510204082</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{fa1d7533-6ff4-4468-8e1b-8b8e5a2025e7}</destination>
