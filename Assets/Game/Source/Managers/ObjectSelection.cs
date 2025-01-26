@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 public class ObjectSelection : Singleton<ObjectSelection>
@@ -6,6 +7,12 @@ public class ObjectSelection : Singleton<ObjectSelection>
 	[SerializeField, Tooltip("How long can the user select (seconds)")] float timerAmount = 10f;
 	private bool timerStarted;
 	private float timeLeft;
+
+	public EventReference successSound;
+	public EventReference failureSound;
+
+	public EventReference witchSuccessSound;
+	public EventReference witchFailureSound;
 
 	public void CheckSelection(List<Object> ingredients)
 	{
@@ -15,6 +22,8 @@ public class ObjectSelection : Singleton<ObjectSelection>
 
 		if (succeded)
 		{
+			AudioManager.Instance.PlayOneShot(successSound);
+			AudioManager.Instance.PlayOneShotDelayed(witchSuccessSound, 1f);
 			//Calculate the score based on the items selected
 			//Destroy the items only if we succeded
 			for (int i = 0; i < numberOfBubbles; i++)
@@ -25,9 +34,10 @@ public class ObjectSelection : Singleton<ObjectSelection>
 				ingredients[i].DeleteSelf();
 			}
 			ObjectSpawner.instance.SpawnNewIngredients(numberOfBubbles);
-		}else{
+		} else {
+			AudioManager.Instance.PlayOneShot(failureSound);
+            AudioManager.Instance.PlayOneShotDelayed(witchFailureSound, 1f);
             UIManager.instance.UpdateScore(-(numberOfBubbles * 2));
-
         }
 	}
 

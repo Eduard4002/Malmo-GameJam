@@ -1,3 +1,4 @@
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -18,6 +19,10 @@ public class UIManager : MonoBehaviour
     private bool startAnimation = false;
 
     public static UIManager instance;
+
+    public EventReference startGameSound;
+    public EventReference resumeGameSound;
+    public EventReference buttonSound;
 
     private void Awake() {
         if (instance == null)
@@ -44,6 +49,15 @@ public class UIManager : MonoBehaviour
     }
 
     public void StartAnimation(bool goingDown){
+
+        if (goingDown)
+        {
+            AudioManager.Instance.PlayOneShot(startGameSound);
+        }
+        else
+        {
+            AudioManager.Instance.PlayOneShot(buttonSound);
+        }
         startAnimation = true;
 
         moveTowards = goingDown == true ? downPosition : upPosition;
@@ -60,11 +74,13 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
+        AudioManager.Instance.PlayOneShot(resumeGameSound);
         SceneManager.LoadSceneAsync("ObjectSpawning");
     }
 
     public void QuitGame()
     {
+        AudioManager.Instance.PlayOneShot(buttonSound);
         Debug.Log("Game is exiting");
         Application.Quit();
     }

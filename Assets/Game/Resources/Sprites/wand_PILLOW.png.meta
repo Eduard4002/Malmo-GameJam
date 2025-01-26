@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wand_PILLOW_0: 8942005539971014111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
