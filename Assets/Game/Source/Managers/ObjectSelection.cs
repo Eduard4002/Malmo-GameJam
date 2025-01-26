@@ -32,6 +32,7 @@ public class ObjectSelection : Singleton<ObjectSelection>
 
 			if((int)GameManager.instance.currentStage >= 3)
 			{
+				GameManager.instance.CheckScoreLevel();
                 ObjectSpawner.instance.SpawnNewIngredients();
             }
 			else

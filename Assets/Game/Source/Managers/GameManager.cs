@@ -19,6 +19,14 @@ public class GameManager : MonoBehaviour
     Sprite[] stripedSpriteArray;
     Sprite[] dotsSpriteArray;
 
+    List<CharacteristicDefinition> stage4Definitions;
+    List<CharacteristicDefinition> stage5Definitions;
+    List<CharacteristicDefinition> stage6Definitions;
+    List<CharacteristicDefinition> stage7Definitions;
+    List<CharacteristicDefinition> stage8Definitions;
+    List<CharacteristicDefinition> stage9Definitions;
+
+
     private void Awake() {
         if (instance == null)
         {
@@ -47,17 +55,51 @@ public class GameManager : MonoBehaviour
 
         Characteristics = new List<CharacteristicDefinition>()
         {
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Plain, Sprite = plainSpriteArray[0] },
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Spots, Sprite = dotsSpriteArray[0] },
-            new CharacteristicDefinition{Shape = Shape.Frog, Texture = Texture.Stripes, Sprite = stripedSpriteArray[0] },
+            GetSpriteForCharacteristic(Shape.Frog, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Frog, Texture.Stripes),
 
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Plain, Sprite = plainSpriteArray[4] },
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Spots, Sprite = dotsSpriteArray[4] },
-            new CharacteristicDefinition{Shape = Shape.Eye, Texture = Texture.Stripes, Sprite = stripedSpriteArray[4] },
+            GetSpriteForCharacteristic(Shape.Eye, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Eye, Texture.Stripes),
 
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Plain, Sprite = plainSpriteArray[3] },
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Spots, Sprite = dotsSpriteArray[3] },
-            new CharacteristicDefinition{Shape = Shape.Chickenfeet, Texture = Texture.Stripes, Sprite = stripedSpriteArray[3] },
+            GetSpriteForCharacteristic(Shape.Chickenfeet, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Chickenfeet, Texture.Stripes),
+        };
+
+        stage5Definitions = new List<CharacteristicDefinition>()
+        {
+            GetSpriteForCharacteristic(Shape.Frog, Texture.Spots),
+            GetSpriteForCharacteristic(Shape.Eye, Texture.Spots),
+            GetSpriteForCharacteristic(Shape.Chickenfeet, Texture.Spots),
+        };
+
+        stage6Definitions = new List<CharacteristicDefinition>()
+        {
+            GetSpriteForCharacteristic(Shape.Skull, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Skull, Texture.Stripes),
+            GetSpriteForCharacteristic(Shape.Skull, Texture.Spots),
+        };
+
+        stage7Definitions = new List<CharacteristicDefinition>()
+        {
+            GetSpriteForCharacteristic(Shape.Frog, Texture.ZigZag),
+            GetSpriteForCharacteristic(Shape.Eye, Texture.ZigZag),
+            GetSpriteForCharacteristic(Shape.Chickenfeet, Texture.ZigZag),
+        };
+
+        stage8Definitions = new List<CharacteristicDefinition>()
+        {
+            GetSpriteForCharacteristic(Shape.Fish, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Fish, Texture.Stripes),
+            GetSpriteForCharacteristic(Shape.Fish, Texture.Spots),
+            GetSpriteForCharacteristic(Shape.Fish, Texture.ZigZag),
+        };
+
+        stage6Definitions = new List<CharacteristicDefinition>()
+        {
+            GetSpriteForCharacteristic(Shape.Mushroom, Texture.Plain),
+            GetSpriteForCharacteristic(Shape.Mushroom, Texture.Stripes),
+            GetSpriteForCharacteristic(Shape.Mushroom, Texture.Spots),
+            GetSpriteForCharacteristic(Shape.Mushroom, Texture.ZigZag),
         };
     }
 
@@ -78,11 +120,6 @@ public class GameManager : MonoBehaviour
     public void StopGame(){
         gameStarted = false;
         ObjectSpawner.instance.ClearAllObjects();
-    }
-
-    public void ChangeCharacteristicsPool()
-    {
-
     }
 
     public List<CharacteristicDefinition> GetCharacteristicsForStage(Stages stage)
@@ -137,7 +174,76 @@ public class GameManager : MonoBehaviour
 
     public void CheckScoreLevel()
     {
+        switch (UIManager.instance.GetScore())
+        {
+            case > 10000:
 
+                if ((int)currentStage >= (int)Stages.Stage9)
+                    break;
+                currentStage = Stages.Stage9;
+                Characteristics.AddRange(stage9Definitions);
+                ObjectSpawner.instance.ChangeMaxAmount(15);
+                break;
+            case > 8000:
+
+                if ((int)currentStage >= (int)Stages.Stage8)
+                    break;
+                currentStage = Stages.Stage8;
+                Characteristics.AddRange(stage8Definitions);
+                ObjectSpawner.instance.ChangeMaxAmount(13);
+                break;
+            case > 6000:
+
+                if ((int)currentStage >= (int)Stages.Stage7)
+                    break;
+                currentStage = Stages.Stage7;
+                Characteristics.AddRange(stage7Definitions);
+                ObjectSpawner.instance.ChangeMaxAmount(11);
+                break;
+            case > 4000:
+
+                if ((int)currentStage >= (int)Stages.Stage6)
+                    break;
+                currentStage = Stages.Stage6;
+                Characteristics.AddRange(stage6Definitions);
+                ObjectSpawner.instance.ChangeMaxAmount(9);
+                break;
+            case > 2000:
+                if ((int)currentStage >= (int)Stages.Stage5)
+                    break;
+                currentStage = Stages.Stage5;
+                Characteristics.AddRange(stage5Definitions);
+                ObjectSpawner.instance.ChangeMaxAmount(7);
+                break;
+        }
+    }
+
+    private CharacteristicDefinition GetSpriteForCharacteristic(Shape shape, Texture texture)
+    {
+        var characteristic = new CharacteristicDefinition()
+        {
+            Shape = Shape.Frog,
+            Texture = Texture.Stripes,
+            Sprite = stripedSpriteArray[0]
+        };
+
+        switch (texture)
+        {
+            case Texture.Plain:
+                characteristic.Sprite = plainSpriteArray[(int)shape];
+                break;
+            case Texture.Spots:
+                characteristic.Sprite = dotsSpriteArray[(int)shape];
+                break;
+            case Texture.ZigZag:
+                characteristic.Sprite = zigzagSpriteArray[(int)shape];
+                break;
+            case Texture.Stripes:
+            default:
+                characteristic.Sprite = stripedSpriteArray[(int)shape];
+                break;
+        }
+        return characteristic;
     }
 }
 
