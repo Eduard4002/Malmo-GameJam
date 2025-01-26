@@ -744,11 +744,11 @@ MonoBehaviour:
     Path: event:/Ingame/bubbles/Bubble pick up
   failureSound:
     Guid:
-      Data1: 1218903989
-      Data2: 1254947418
-      Data3: 777813148
-      Data4: -431328238
-    Path: event:/Ingame/bubbles/Bubble pop
+      Data1: 1735882438
+      Data2: 1332618847
+      Data3: 626685856
+      Data4: 1803241140
+    Path: event:/Ingame/Reactionary/Fail
   witchSuccessSound:
     Guid:
       Data1: 1351661458
