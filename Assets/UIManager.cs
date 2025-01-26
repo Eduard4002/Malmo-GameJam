@@ -71,6 +71,8 @@ public class UIManager : MonoBehaviour
     public void UpdateScore(int scoreChange)
     {
         score += scoreChange;
+        if (score < 0)
+            score = 0; 
 
         int tempScore = int.Parse(score.ToString("D7"));
         scoreSystem.UpdateNumber(tempScore);

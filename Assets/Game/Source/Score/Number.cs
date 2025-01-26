@@ -18,7 +18,7 @@ public class Number : MonoBehaviour
 	private void Update()
 	{
 		int number = Mathf.CeilToInt(Mathf.Lerp(curNumber, targetNumber, Time.deltaTime * 5));
-		if (number > curNumber)
+		if (number != curNumber)
 			Set(number);
 	}
 

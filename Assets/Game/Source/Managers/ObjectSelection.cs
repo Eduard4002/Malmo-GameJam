@@ -42,7 +42,6 @@ public class ObjectSelection : Singleton<ObjectSelection>
 		} else {
 			for (int i = 0; i < numberOfBubbles; i++)
 			{
-				UIManager.instance.UpdateScore(numberOfBubbles * 2);
 				ingredients[i].Fail();
 			}
 			AudioManager.Instance.PlayOneShot(failureSound);
