@@ -62,8 +62,10 @@ public class DrawManager : Singleton<DrawManager>
 			EndDraw();
 
 			var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			if (Vector2.Distance(startPos, mousePos) < .5f)
+			if (Vector2.Distance(startPos, mousePos) < 2.5f)
+			{
 				Encircle();
+			}
 		}
 	}
 
@@ -160,7 +162,11 @@ public class DrawManager : Singleton<DrawManager>
 	{
 		var points = new Vector3[brush.positionCount];
 		brush.GetPositions(points);
-		poly.points = Helpers.ConvertToVector2Array(points, firstPointIndex);
+		var polyPoints = points
+			.Where(p => p != Vector3.zero)
+			.Select(p => (Vector2)p)
+			.ToArray();
+		poly.points = polyPoints;
 	}
 
 	private void UpdateVisual()
